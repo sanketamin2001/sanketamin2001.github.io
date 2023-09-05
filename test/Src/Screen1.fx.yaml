@@ -1,0 +1,26 @@
+Screen1 As screen:
+
+    Label1 As label:
+        Text: ="Text1"
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Label2 As label:
+        Text: ="Text2"
+        X: =190
+        Y: =52
+        ZIndex: =2
+
+    Label3 As label:
+        Text: ="Text3"
+        X: =340
+        Y: =52
+        ZIndex: =3
+
+    Label4 As label:
+        Text: ="Text4"
+        X: =490
+        Y: =52
+        ZIndex: =4
+
