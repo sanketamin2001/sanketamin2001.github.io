@@ -1,1 +1,16 @@
-{}
+{
+  "4d309081-fb44-45d0-b07d-1dc27d1f9716": {
+    "connectionRef": {
+      "displayName": "Spatial Services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpatialServices"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4d309081-fb44-45d0-b07d-1dc27d1f9716"
+  }
+}

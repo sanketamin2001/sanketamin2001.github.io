@@ -1,26 +1,913 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Gallery1": 11,
+    "galleryTemplate1": 12,
+    "Host": 3,
+    "Image1": 14,
+    "Label1": 10,
+    "Label10": 6,
+    "Label2": 7,
+    "Label3": 8,
+    "Label4": 9,
+    "Label555": 5,
+    "Map1": 19,
+    "NextArrow1": 15,
+    "Rectangle1": 13,
+    "Screen1": 4,
+    "Separator1": 18,
+    "Subtitle1": 17,
+    "Title1": 16
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "09/05/2023 11:37:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "4d309081-fb44-45d0-b07d-1dc27d1f9716": "\"/providers/microsoft.powerapps/apis/shared_microsoftspatialservices/connections/1b64599f2e4749a0a9cbddb97b59e613\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "Accounts": 39,
+    "Accounts\\account_accountcategorycode": 14,
+    "Accounts\\account_accountclassificationcode": 15,
+    "Accounts\\account_accountratingcode": 16,
+    "Accounts\\account_address1_addresstypecode": 17,
+    "Accounts\\account_address1_freighttermscode": 18,
+    "Accounts\\account_address1_shippingmethodcode": 19,
+    "Accounts\\account_address2_addresstypecode": 20,
+    "Accounts\\account_address2_freighttermscode": 21,
+    "Accounts\\account_address2_shippingmethodcode": 22,
+    "Accounts\\account_businesstypecode": 23,
+    "Accounts\\account_creditonhold": 1,
+    "Accounts\\account_customersizecode": 24,
+    "Accounts\\account_customertypecode": 25,
+    "Accounts\\account_donotbulkemail": 2,
+    "Accounts\\account_donotbulkpostalmail": 3,
+    "Accounts\\account_donotemail": 4,
+    "Accounts\\account_donotfax": 5,
+    "Accounts\\account_donotphone": 6,
+    "Accounts\\account_donotpostalmail": 7,
+    "Accounts\\account_donotsendmm": 8,
+    "Accounts\\account_followemail": 9,
+    "Accounts\\account_industrycode": 26,
+    "Accounts\\account_isprivate": 10,
+    "Accounts\\account_marketingonly": 11,
+    "Accounts\\account_merged": 12,
+    "Accounts\\account_ownershipcode": 28,
+    "Accounts\\account_participatesinworkflow": 13,
+    "Accounts\\account_paymenttermscode": 29,
+    "Accounts\\account_preferredappointmentdaycode": 30,
+    "Accounts\\account_preferredappointmenttimecode": 31,
+    "Accounts\\account_preferredcontactmethodcode": 32,
+    "Accounts\\account_shippingmethodcode": 33,
+    "Accounts\\account_statecode": 35,
+    "Accounts\\account_statuscode": 36,
+    "Accounts\\account_territorycode": 34,
+    "Accounts\\default.cds_account_views": 37,
+    "Accounts\\msft_datastate": 27,
+    "CustomGallerySample": 38,
+    "SpatialServices": 0
+  },
   "OrderGroupControls": {},
-  "OrderPcfTemplate": {},
+  "OrderPcfTemplate": {
+    "Map": 0
+  },
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
-  "PCFDynamicSchemaForIRRetrievalEntry": {},
-  "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "OrderXMLTemplate": {
+    "gallery": 1,
+    "icon": 4,
+    "image": 3,
+    "label": 0,
+    "rectangle": 2
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Gallery1": {},
+    "galleryTemplate1": {},
+    "Host": {},
+    "Image1": {},
+    "Label1": {},
+    "Label10": {},
+    "Label2": {},
+    "Label3": {},
+    "Label4": {},
+    "Label555": {},
+    "Map1": {
+      "Bounds": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Record",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "East",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "North",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "South",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "West",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      },
+      "CenterLocation": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Record",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Latitude",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Longitude",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      },
+      "ClickedLocation": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Record",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Latitude",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Longitude",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      },
+      "DeletedShape": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Record",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Area",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Color",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "GeoJSON",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Id",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Label",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Perimeter",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      },
+      "GeocodedItems": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Address",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Label",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Latitude",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Longitude",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      },
+      "RouteDirection": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Record",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "LengthInMeters",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Table",
+              "Name": "OrderedWaypoints",
+              "Type": [
+                {
+                  "EnumString": "",
+                  "Kind": "String",
+                  "Name": "Address",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Index",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "String",
+                  "Name": "Label",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Latitude",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Longitude",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "RouteGeoJSON",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Table",
+              "Name": "RouteLegs",
+              "Type": [
+                {
+                  "EnumString": "",
+                  "Kind": "String",
+                  "Name": "EndAddress",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "String",
+                  "Name": "EndLabel",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "EndLatitude",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "EndLongitude",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "Index",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "LengthInMeters",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "String",
+                  "Name": "StartAddress",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "String",
+                  "Name": "StartLabel",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "StartLatitude",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "StartLongitude",
+                  "Type": []
+                },
+                {
+                  "EnumString": "",
+                  "Kind": "Number",
+                  "Name": "TravelTimeInSeconds",
+                  "Type": []
+                }
+              ]
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "TravelTimeInSeconds",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      },
+      "SelectedShape": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Record",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Area",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Color",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "GeoJSON",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Id",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Label",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "Number",
+              "Name": "Perimeter",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.334"
+      }
+    },
+    "NextArrow1": {},
+    "Rectangle1": {},
+    "Screen1": {},
+    "Separator1": {},
+    "Subtitle1": {},
+    "Title1": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {
+    "Map1": {
+      "Bounds": {
+        "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"North\":{\"type\":\"number\"},\"South\":{\"type\":\"number\"},\"East\":{\"type\":\"number\"},\"West\":{\"type\":\"number\"}}}",
+        "PCFSkipValidation": false
+      },
+      "CenterLocation": {
+        "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"}}}",
+        "PCFSkipValidation": false
+      },
+      "ClickedLocation": {
+        "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"}}}",
+        "PCFSkipValidation": false
+      },
+      "DeletedShape": {
+        "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"GeoJSON\":{\"type\":\"string\"},\"Label\":{\"type\":\"string\"},\"Color\":{\"type\":\"string\"},\"Area\":{\"type\":\"number\"},\"Perimeter\":{\"type\":\"number\"},\"Id\":{\"type\":\"string\"}}}",
+        "PCFSkipValidation": false
+      },
+      "GeocodedItems": {
+        "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Label\":{\"type\":\"string\"},\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"},\"Address\":{\"type\":\"string\"}}}}",
+        "PCFSkipValidation": false
+      },
+      "RouteDirection": {
+        "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"LengthInMeters\":{\"type\":\"number\"},\"TravelTimeInSeconds\":{\"type\":\"number\"},\"RouteGeoJSON\":{\"type\":\"string\"},\"RouteLegs\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"LengthInMeters\":{\"type\":\"number\"},\"TravelTimeInSeconds\":{\"type\":\"number\"},\"StartLatitude\":{\"type\":\"number\"},\"StartLongitude\":{\"type\":\"number\"},\"StartLabel\":{\"type\":\"string\"},\"StartAddress\":{\"type\":\"string\"},\"EndLatitude\":{\"type\":\"number\"},\"EndLongitude\":{\"type\":\"number\"},\"EndLabel\":{\"type\":\"string\"},\"EndAddress\":{\"type\":\"string\"},\"Index\":{\"type\":\"number\"}}}},\"OrderedWaypoints\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"},\"Label\":{\"type\":\"string\"},\"Address\":{\"type\":\"string\"},\"Index\":{\"type\":\"number\"}}}}}}",
+        "PCFSkipValidation": false
+      },
+      "SelectedShape": {
+        "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"GeoJSON\":{\"type\":\"string\"},\"Label\":{\"type\":\"string\"},\"Color\":{\"type\":\"string\"},\"Area\":{\"type\":\"number\"},\"Perimeter\":{\"type\":\"number\"},\"Id\":{\"type\":\"string\"}}}",
+        "PCFSkipValidation": false
+      }
+    }
+  },
+  "PCFTemplateEntry": {
+    "Map1": {
+      "CustomGroupControlTemplateName": "",
+      "DynamicControlDefinitionJson": "{\"ControlNamespace\":\"Microsoft\",\"ControlConstructor\":\"Map\",\"DisplayNameKey\":\"Map_Display_Key\",\"Resources\":\"[{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/prop-types.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":1,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/react-fela.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":2,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/fela.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":3,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/fela-dom.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":4,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/ctrllib/PCFControls/js/PCFControlWrapper.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":6,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":7,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"ManifestTemplate\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"ConstructorName\\\\\\\":\\\\\\\"Microsoft.Map\\\\\\\",\\\\\\\"CustomControlId\\\\\\\":\\\\\\\"Microsoft.Map\\\\\\\",\\\\\\\"IsVirtual\\\\\\\":false,\\\\\\\"Properties\\\\\\\":{\\\\\\\"Resources\\\\\\\":[{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/prop-types.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":1,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/react-fela.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":2,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/fela.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":3,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/PCF/fela-dom.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":4,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/ctrllib/PCFControls/js/PCFControlWrapper.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":6,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null},{\\\\\\\"Name\\\\\\\":\\\\\\\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\\\\\\\",\\\\\\\"LoadOrder\\\\\\\":7,\\\\\\\"Type\\\\\\\":0,\\\\\\\"LibraryName\\\\\\\":null}],\\\\\\\"GroupDefinitions\\\\\\\":null,\\\\\\\"DataSetDefinitions\\\\\\\":{\\\\\\\"Items\\\\\\\":{\\\\\\\"DisplayName\\\\\\\":\\\\\\\"Locations\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Grid\\\\\\\",\\\\\\\"Columns\\\\\\\":{\\\\\\\"0\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsLabels\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"},\\\\\\\"1\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsLatitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\"},\\\\\\\"2\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsLongitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\"},\\\\\\\"3\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsAddresses\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"},\\\\\\\"4\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsColors\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"},\\\\\\\"5\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsIcons\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"}},\\\\\\\"Primary\\\\\\\":true,\\\\\\\"InitialDataSetFetch\\\\\\\":true,\\\\\\\"CDSDataSetOptions\\\\\\\":null},\\\\\\\"Shapes\\\\\\\":{\\\\\\\"DisplayName\\\\\\\":\\\\\\\"Shapes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Grid\\\\\\\",\\\\\\\"Columns\\\\\\\":{\\\\\\\"0\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeGeoJSONObjects\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"},\\\\\\\"1\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeLabels\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"},\\\\\\\"2\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeColors\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"}},\\\\\\\"Primary\\\\\\\":false,\\\\\\\"InitialDataSetFetch\\\\\\\":true,\\\\\\\"CDSDataSetOptions\\\\\\\":null},\\\\\\\"RouteWaypoints\\\\\\\":{\\\\\\\"DisplayName\\\\\\\":\\\\\\\"Route waypoints\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Grid\\\\\\\",\\\\\\\"Columns\\\\\\\":{\\\\\\\"0\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsLabels\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"},\\\\\\\"1\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsLatitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\"},\\\\\\\"2\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsLongitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\"},\\\\\\\"3\\\\\\\":{\\\\\\\"Required\\\\\\\":false,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsAddresses\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\"}},\\\\\\\"Primary\\\\\\\":false,\\\\\\\"InitialDataSetFetch\\\\\\\":true,\\\\\\\"CDSDataSetOptions\\\\\\\":null}},\\\\\\\"Properties\\\\\\\":{\\\\\\\"AddressDataSource\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"Default\\\\\\\"},\\\\\\\"DefaultLocation\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"false\\\\\\\"},\\\\\\\"DefaultLatitude\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"47.642967\\\\\\\"},\\\\\\\"DefaultLongitude\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"-122.126801\\\\\\\"},\\\\\\\"DefaultZoomLevel\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"16\\\\\\\"},\\\\\\\"CurrentLocation\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"false\\\\\\\"},\\\\\\\"CurrentLocationLatitude\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"0\\\\\\\"},\\\\\\\"CurrentLocationLongitude\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"0\\\\\\\"},\\\\\\\"MapStyle\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"Road\\\\\\\"},\\\\\\\"SatelliteView\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"false\\\\\\\"},\\\\\\\"Clustering\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"Compass\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"Zoom\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"Pitch\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"InfoCards\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"None\\\\\\\"},\\\\\\\"PinColor\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#1D72A9\\\\\\\"},\\\\\\\"ShowShapes\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"ShowShapeLabels\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"ShapeDrawing\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"false\\\\\\\"},\\\\\\\"ShapeEditingDeleting\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"false\\\\\\\"},\\\\\\\"UseRouting\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"false\\\\\\\"},\\\\\\\"RouteMaintainOrder\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"false\\\\\\\"},\\\\\\\"RouteOptimization\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"None\\\\\\\"},\\\\\\\"RouteTravelMode\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"Car\\\\\\\"},\\\\\\\"ShowRoutePins\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"true\\\\\\\"},\\\\\\\"Transparency\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"0\\\\\\\"},\\\\\\\"BorderStyle\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"solid\\\\\\\"},\\\\\\\"BorderThickness\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"0\\\\\\\"},\\\\\\\"BorderColor\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"#00126B\\\\\\\"},\\\\\\\"BorderRadius\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"0\\\\\\\"},\\\\\\\"TabIndex\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"0\\\\\\\"},\\\\\\\"CanvasApp\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"PinIcons\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"marker\\\\\\\"},\\\\\\\"CenterLocation\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"GeocodedItems\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ClickedLocation\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Bounds\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"GeoJSON\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"SelectedShape\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"DeletedShape\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteDirection\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Items\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Selected\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"SelectedItems\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ItemsLabels\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ItemsLatitudes\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ItemsLongitudes\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ItemsAddresses\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ItemsColors\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ItemsIcons\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Shapes_Items\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Shapes_Selected\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"Shapes_SelectedItems\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ShapeGeoJSONObjects\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ShapeLabels\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"ShapeColors\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteWaypoints_Items\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":1,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteWaypoints_Selected\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteWaypoints_SelectedItems\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":2,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteWaypointsLabels\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteWaypointsLatitudes\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteWaypointsLongitudes\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"},\\\\\\\"RouteWaypointsAddresses\\\\\\\":{\\\\\\\"Required\\\\\\\":true,\\\\\\\"Usage\\\\\\\":0,\\\\\\\"DefaultValue\\\\\\\":\\\\\\\"\\\\\\\"}},\\\\\\\"FeatureUsage\\\\\\\":null},\\\\\\\"Events\\\\\\\":{\\\\\\\"OnItemsChange\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnItemsChange\\\\\\\"},\\\\\\\"OnLoad\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnLoad\\\\\\\"},\\\\\\\"OnMapClick\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnMapClick\\\\\\\"},\\\\\\\"OnShapeCreated\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnShapeCreated\\\\\\\"},\\\\\\\"OnShapeSelected\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnShapeSelected\\\\\\\"},\\\\\\\"OnShapeEdited\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnShapeEdited\\\\\\\"},\\\\\\\"OnShapeDeleted\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnShapeDeleted\\\\\\\"},\\\\\\\"OnRouteDirectionChange\\\\\\\":{\\\\\\\"EventName\\\\\\\":\\\\\\\"OnRouteDirectionChange\\\\\\\"}},\\\\\\\"CommonEvents\\\\\\\":null,\\\\\\\"DesignMap\\\\\\\":null,\\\\\\\"PropertyDependencies\\\\\\\":[{\\\\\\\"Input\\\\\\\":\\\\\\\"DefaultLocation\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"CenterLocation\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"PinColor\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"GeocodedItems\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"DefaultLocation\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"ClickedLocation\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"DefaultLocation\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"Bounds\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"Transparency\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"SelectedShape\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"Transparency\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"DeletedShape\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"UseRouting\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"RouteDirection\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"schema\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"Items\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"Selected\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"Items\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"SelectedItems\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"Shapes_Items\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"Shapes_Selected\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"Shapes_Items\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"Shapes_SelectedItems\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"RouteWaypoints_Items\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"RouteWaypoints_Selected\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"\\\\\\\"},{\\\\\\\"Input\\\\\\\":\\\\\\\"RouteWaypoints_Items\\\\\\\",\\\\\\\"Output\\\\\\\":\\\\\\\"RouteWaypoints_SelectedItems\\\\\\\",\\\\\\\"RequiredFor\\\\\\\":\\\\\\\"\\\\\\\"}],\\\\\\\"Children\\\\\\\":null}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":7,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"ManifestPropertyTypes\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"Properties\\\\\\\":[{\\\\\\\"Name\\\\\\\":\\\\\\\"AddressDataSource\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Enum\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DefaultLocation\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DefaultLatitude\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DefaultLongitude\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DefaultZoomLevel\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Whole_None\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"CurrentLocation\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"CurrentLocationLatitude\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"CurrentLocationLongitude\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"FP\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"MapStyle\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Enum\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"SatelliteView\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Clustering\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Compass\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Zoom\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Pitch\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"InfoCards\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Enum\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"PinColor\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"Color\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShowShapes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShowShapeLabels\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeDrawing\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeEditingDeleting\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"UseRouting\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteMaintainOrder\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteOptimization\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Enum\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteTravelMode\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Enum\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShowRoutePins\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Transparency\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Whole_None\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"BorderStyle\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"BorderStyle\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"BorderThickness\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Whole_None\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"BorderColor\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"SingleLine_Text\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"Color\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"BorderRadius\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Whole_None\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"TabIndex\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Whole_None\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"CanvasApp\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"TwoOptions\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"PinIcons\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Enum\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"CenterLocation\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"GeocodedItems\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ClickedLocation\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Bounds\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"GeoJSON\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Multiple\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"SelectedShape\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"DeletedShape\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteDirection\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Items\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DataSet\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":true,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Selected\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"SelectedItems\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DataSet\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsLabels\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsLatitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsLongitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsAddresses\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsColors\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ItemsIcons\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Shapes_Items\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DataSet\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Shapes_Selected\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"Shapes_SelectedItems\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DataSet\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeGeoJSONObjects\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeLabels\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"ShapeColors\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypoints_Items\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DataSet\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypoints_Selected\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Object\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypoints_SelectedItems\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DataSet\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsLabels\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsLatitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsLongitudes\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"RouteWaypointsAddresses\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":false},{\\\\\\\"Name\\\\\\\":\\\\\\\"PCFTeamsTheme\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"X\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"Y\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"Width\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"Height\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Number\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"Visible\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"Boolean\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"DisplayMode\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"DisplayMode\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true},{\\\\\\\"Name\\\\\\\":\\\\\\\"Tooltip\\\\\\\",\\\\\\\"Type\\\\\\\":\\\\\\\"String\\\\\\\",\\\\\\\"ComplexType\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"IsPrimary\\\\\\\":false,\\\\\\\"IsIncluded\\\\\\\":true}]}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":8,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"PowerAppsControlInfo\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"TemplateVersion\\\\\\\":1,\\\\\\\"Version\\\\\\\":\\\\\\\"1.8.26\\\\\\\",\\\\\\\"IsFirstParty\\\\\\\":true}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":9,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/Map/bundle.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":13,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":1,\\\"Path\\\":\\\"/PCFControls/Map/AzureMaps.css\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":14,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":1,\\\"Path\\\":\\\"/PCFControls/Map/atlas.min.css\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":15,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":1,\\\"Path\\\":\\\"/PCFControls/Map/atlas-drawing.min.css\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":16,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/Map/libs/mapPolyfill.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":11,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCFControls/Map/libs/atlas.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":12,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":2,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1033.resx\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":9,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"FormattingData\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"timeZoneUtcOffsetMinutes\\\\\\\":0,\\\\\\\"dateTimeFormatInfo\\\\\\\":{\\\\\\\"AMDesignator\\\\\\\":\\\\\\\"AM\\\\\\\",\\\\\\\"Calendar\\\\\\\":{\\\\\\\"MinSupportedDateTime\\\\\\\":\\\\\\\"0001-01-01T00:00:00\\\\\\\",\\\\\\\"MaxSupportedDateTime\\\\\\\":\\\\\\\"9999-12-31T23:59:59.9999999\\\\\\\",\\\\\\\"AlgorithmType\\\\\\\":1,\\\\\\\"CalendarType\\\\\\\":1,\\\\\\\"Eras\\\\\\\":[1],\\\\\\\"TwoDigitYearMax\\\\\\\":2049,\\\\\\\"IsReadOnly\\\\\\\":false},\\\\\\\"DateSeparator\\\\\\\":\\\\\\\"/\\\\\\\",\\\\\\\"FirstDayOfWeek\\\\\\\":0,\\\\\\\"CalendarWeekRule\\\\\\\":0,\\\\\\\"FullDateTimePattern\\\\\\\":\\\\\\\"dddd, MMMM d, yyyy h:mm:ss tt\\\\\\\",\\\\\\\"LongDatePattern\\\\\\\":\\\\\\\"dddd, MMMM d, yyyy\\\\\\\",\\\\\\\"LongTimePattern\\\\\\\":\\\\\\\"h:mm:ss tt\\\\\\\",\\\\\\\"MonthDayPattern\\\\\\\":\\\\\\\"MMMM d\\\\\\\",\\\\\\\"PMDesignator\\\\\\\":\\\\\\\"PM\\\\\\\",\\\\\\\"RFC1123Pattern\\\\\\\":\\\\\\\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\\\\\\\",\\\\\\\"ShortDatePattern\\\\\\\":\\\\\\\"M/d/yyyy\\\\\\\",\\\\\\\"ShortTimePattern\\\\\\\":\\\\\\\"h:mm tt\\\\\\\",\\\\\\\"SortableDateTimePattern\\\\\\\":\\\\\\\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\\\\\\\",\\\\\\\"TimeSeparator\\\\\\\":\\\\\\\":\\\\\\\",\\\\\\\"UniversalSortableDateTimePattern\\\\\\\":\\\\\\\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\\\\\\\",\\\\\\\"YearMonthPattern\\\\\\\":\\\\\\\"MMMM yyyy\\\\\\\",\\\\\\\"AbbreviatedDayNames\\\\\\\":[\\\\\\\"Sun\\\\\\\",\\\\\\\"Mon\\\\\\\",\\\\\\\"Tue\\\\\\\",\\\\\\\"Wed\\\\\\\",\\\\\\\"Thu\\\\\\\",\\\\\\\"Fri\\\\\\\",\\\\\\\"Sat\\\\\\\"],\\\\\\\"ShortestDayNames\\\\\\\":[\\\\\\\"Su\\\\\\\",\\\\\\\"Mo\\\\\\\",\\\\\\\"Tu\\\\\\\",\\\\\\\"We\\\\\\\",\\\\\\\"Th\\\\\\\",\\\\\\\"Fr\\\\\\\",\\\\\\\"Sa\\\\\\\"],\\\\\\\"DayNames\\\\\\\":[\\\\\\\"Sunday\\\\\\\",\\\\\\\"Monday\\\\\\\",\\\\\\\"Tuesday\\\\\\\",\\\\\\\"Wednesday\\\\\\\",\\\\\\\"Thursday\\\\\\\",\\\\\\\"Friday\\\\\\\",\\\\\\\"Saturday\\\\\\\"],\\\\\\\"AbbreviatedMonthNames\\\\\\\":[\\\\\\\"Jan\\\\\\\",\\\\\\\"Feb\\\\\\\",\\\\\\\"Mar\\\\\\\",\\\\\\\"Apr\\\\\\\",\\\\\\\"May\\\\\\\",\\\\\\\"Jun\\\\\\\",\\\\\\\"Jul\\\\\\\",\\\\\\\"Aug\\\\\\\",\\\\\\\"Sep\\\\\\\",\\\\\\\"Oct\\\\\\\",\\\\\\\"Nov\\\\\\\",\\\\\\\"Dec\\\\\\\",\\\\\\\"\\\\\\\"],\\\\\\\"MonthNames\\\\\\\":[\\\\\\\"January\\\\\\\",\\\\\\\"February\\\\\\\",\\\\\\\"March\\\\\\\",\\\\\\\"April\\\\\\\",\\\\\\\"May\\\\\\\",\\\\\\\"June\\\\\\\",\\\\\\\"July\\\\\\\",\\\\\\\"August\\\\\\\",\\\\\\\"September\\\\\\\",\\\\\\\"October\\\\\\\",\\\\\\\"November\\\\\\\",\\\\\\\"December\\\\\\\",\\\\\\\"\\\\\\\"],\\\\\\\"IsReadOnly\\\\\\\":false,\\\\\\\"NativeCalendarName\\\\\\\":\\\\\\\"Gregorian Calendar\\\\\\\",\\\\\\\"AbbreviatedMonthGenitiveNames\\\\\\\":[\\\\\\\"Jan\\\\\\\",\\\\\\\"Feb\\\\\\\",\\\\\\\"Mar\\\\\\\",\\\\\\\"Apr\\\\\\\",\\\\\\\"May\\\\\\\",\\\\\\\"Jun\\\\\\\",\\\\\\\"Jul\\\\\\\",\\\\\\\"Aug\\\\\\\",\\\\\\\"Sep\\\\\\\",\\\\\\\"Oct\\\\\\\",\\\\\\\"Nov\\\\\\\",\\\\\\\"Dec\\\\\\\",\\\\\\\"\\\\\\\"],\\\\\\\"MonthGenitiveNames\\\\\\\":[\\\\\\\"January\\\\\\\",\\\\\\\"February\\\\\\\",\\\\\\\"March\\\\\\\",\\\\\\\"April\\\\\\\",\\\\\\\"May\\\\\\\",\\\\\\\"June\\\\\\\",\\\\\\\"July\\\\\\\",\\\\\\\"August\\\\\\\",\\\\\\\"September\\\\\\\",\\\\\\\"October\\\\\\\",\\\\\\\"November\\\\\\\",\\\\\\\"December\\\\\\\",\\\\\\\"\\\\\\\"]},\\\\\\\"numberFormatInfo\\\\\\\":{\\\\\\\"CurrencyDecimalDigits\\\\\\\":2,\\\\\\\"CurrencyDecimalSeparator\\\\\\\":\\\\\\\".\\\\\\\",\\\\\\\"IsReadOnly\\\\\\\":false,\\\\\\\"CurrencyGroupSizes\\\\\\\":[3],\\\\\\\"NumberGroupSizes\\\\\\\":[3],\\\\\\\"PercentGroupSizes\\\\\\\":[3],\\\\\\\"CurrencyGroupSeparator\\\\\\\":\\\\\\\",\\\\\\\",\\\\\\\"CurrencySymbol\\\\\\\":\\\\\\\"$\\\\\\\",\\\\\\\"NaNSymbol\\\\\\\":\\\\\\\"NaN\\\\\\\",\\\\\\\"CurrencyNegativePattern\\\\\\\":0,\\\\\\\"NumberNegativePattern\\\\\\\":1,\\\\\\\"PercentPositivePattern\\\\\\\":1,\\\\\\\"PercentNegativePattern\\\\\\\":1,\\\\\\\"NegativeInfinitySymbol\\\\\\\":\\\\\\\"-∞\\\\\\\",\\\\\\\"NegativeSign\\\\\\\":\\\\\\\"-\\\\\\\",\\\\\\\"NumberDecimalDigits\\\\\\\":2,\\\\\\\"NumberDecimalSeparator\\\\\\\":\\\\\\\".\\\\\\\",\\\\\\\"NumberGroupSeparator\\\\\\\":\\\\\\\",\\\\\\\",\\\\\\\"CurrencyPositivePattern\\\\\\\":0,\\\\\\\"PositiveInfinitySymbol\\\\\\\":\\\\\\\"∞\\\\\\\",\\\\\\\"PositiveSign\\\\\\\":\\\\\\\"+\\\\\\\",\\\\\\\"PercentDecimalDigits\\\\\\\":2,\\\\\\\"PercentDecimalSeparator\\\\\\\":\\\\\\\".\\\\\\\",\\\\\\\"PercentGroupSeparator\\\\\\\":\\\\\\\",\\\\\\\",\\\\\\\"PercentSymbol\\\\\\\":\\\\\\\"%\\\\\\\",\\\\\\\"PerMilleSymbol\\\\\\\":\\\\\\\"‰\\\\\\\",\\\\\\\"NativeDigits\\\\\\\":[\\\\\\\"0\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"2\\\\\\\",\\\\\\\"3\\\\\\\",\\\\\\\"4\\\\\\\",\\\\\\\"5\\\\\\\",\\\\\\\"6\\\\\\\",\\\\\\\"7\\\\\\\",\\\\\\\"8\\\\\\\",\\\\\\\"9\\\\\\\"],\\\\\\\"DigitSubstitution\\\\\\\":1},\\\\\\\"timeZoneAdjusters\\\\\\\":[],\\\\\\\"formatInfoCultureName\\\\\\\":\\\\\\\"en-US\\\\\\\",\\\\\\\"formatter\\\\\\\":null,\\\\\\\"languagesByCode\\\\\\\":{\\\\\\\"1033\\\\\\\":\\\\\\\"English (United States)\\\\\\\",\\\\\\\"-1\\\\\\\":\\\\\\\"All Languages\\\\\\\"}}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":17,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1025.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1026.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1027.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1028.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1029.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1030.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1031.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1032.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1033.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1035.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1036.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1037.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1038.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1040.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1041.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1042.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1043.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1044.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1045.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1046.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1048.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1049.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1050.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1051.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1053.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1054.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1055.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1057.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1058.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1060.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1061.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1062.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1063.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1066.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1069.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1081.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1086.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1087.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.1110.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.2052.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.2070.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.2074.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.3076.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.3082.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":5,\\\"Path\\\":\\\"/PCFControls/Map/strings/Map.3098.json\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":true},{\\\"Type\\\":3,\\\"Path\\\":\\\"{\\\\\\\"Id\\\\\\\":\\\\\\\"LocalizedStrings\\\\\\\",\\\\\\\"Data\\\\\\\":{\\\\\\\"LocStrings\\\\\\\":{\\\\\\\"Map_GA_Display_Key\\\\\\\":\\\\\\\"Map\\\\\\\",\\\\\\\"Map_Display_Key\\\\\\\":\\\\\\\"Map (preview)\\\\\\\",\\\\\\\"Map_Desc_Key\\\\\\\":\\\\\\\"Dynamic map control powered by Azure Maps\\\\\\\",\\\\\\\"Items_Display_Key\\\\\\\":\\\\\\\"Locations\\\\\\\",\\\\\\\"Items_Desc_Key\\\\\\\":\\\\\\\"Locations displayed on map\\\\\\\",\\\\\\\"ItemsLabels_Display_Key\\\\\\\":\\\\\\\"Location labels\\\\\\\",\\\\\\\"ItemsLabels_Desc_Key\\\\\\\":\\\\\\\"Labels of the locations\\\\\\\",\\\\\\\"ItemsAddresses_Display_Key\\\\\\\":\\\\\\\"Location addresses\\\\\\\",\\\\\\\"ItemsAddresses_Desc_Key\\\\\\\":\\\\\\\"Addresses of the locations\\\\\\\",\\\\\\\"ItemsLongitudes_Display_Key\\\\\\\":\\\\\\\"Location longitudes\\\\\\\",\\\\\\\"ItemsLongitudes_Desc_Key\\\\\\\":\\\\\\\"Longitudes of the locations\\\\\\\",\\\\\\\"ItemsLatitudes_Display_Key\\\\\\\":\\\\\\\"Location latitudes\\\\\\\",\\\\\\\"ItemsLatitudes_Desc_Key\\\\\\\":\\\\\\\"Latitudes of the locations\\\\\\\",\\\\\\\"RoutingWaypoints_Display_Key\\\\\\\":\\\\\\\"Route waypoints\\\\\\\",\\\\\\\"RoutingWaypoints_Desc_Key\\\\\\\":\\\\\\\"Route waypoints displayed on map\\\\\\\",\\\\\\\"RoutingWaypointsAddresses_Display_Key\\\\\\\":\\\\\\\"Route waypoint addresses\\\\\\\",\\\\\\\"RoutingWaypointsAddresses_Desc_Key\\\\\\\":\\\\\\\"Addresses of the route waypoints\\\\\\\",\\\\\\\"RoutingWaypointsLabels_Display_Key\\\\\\\":\\\\\\\"Route waypoint labels\\\\\\\",\\\\\\\"RoutingWaypointsLabels_Desc_Key\\\\\\\":\\\\\\\"Labels of the route waypoints\\\\\\\",\\\\\\\"RoutingWaypointsLongitudes_Display_Key\\\\\\\":\\\\\\\"Route waypoint longitudes\\\\\\\",\\\\\\\"RoutingWaypointsLongitudes_Desc_Key\\\\\\\":\\\\\\\"Longitudes of the route waypoints\\\\\\\",\\\\\\\"RoutingWaypointsLatitudes_Display_Key\\\\\\\":\\\\\\\"Route waypoint latitudes\\\\\\\",\\\\\\\"RoutingWaypointsLatitudes_Desc_Key\\\\\\\":\\\\\\\"Latitudes of the route waypoints\\\\\\\",\\\\\\\"ItemsColors_Display_Key\\\\\\\":\\\\\\\"Location colors\\\\\\\",\\\\\\\"ItemsColors_Desc_Key\\\\\\\":\\\\\\\"Colors of the locations\\\\\\\",\\\\\\\"ItemsIcons_Display_Key\\\\\\\":\\\\\\\"Location icons\\\\\\\",\\\\\\\"ItemsIcons_Desc_Key\\\\\\\":\\\\\\\"Icons of the locations\\\\\\\",\\\\\\\"AzureMapsKey_Display_Key\\\\\\\":\\\\\\\"Azure Maps key\\\\\\\",\\\\\\\"AzureMapsKey_Desc_Key\\\\\\\":\\\\\\\"Azure Maps S0 or S1 tier subscription key for the map\\\\\\\",\\\\\\\"DefaultLocation_Display_Key\\\\\\\":\\\\\\\"Use default location\\\\\\\",\\\\\\\"DefaultLocation_Desc_Key\\\\\\\":\\\\\\\"Use default location set by user\\\\\\\",\\\\\\\"DefaultLongitude_Display_Key\\\\\\\":\\\\\\\"Default longitude\\\\\\\",\\\\\\\"DefaultLongitude_Desc_Key\\\\\\\":\\\\\\\"Default longitude set by user\\\\\\\",\\\\\\\"DefaultLatitude_Display_Key\\\\\\\":\\\\\\\"Default latitude\\\\\\\",\\\\\\\"DefaultLatitude_Desc_Key\\\\\\\":\\\\\\\"Default latitude set by user\\\\\\\",\\\\\\\"DefaultZoomLevel_Display_Key\\\\\\\":\\\\\\\"Default zoom level\\\\\\\",\\\\\\\"DefaultZoomLevel_Desc_Key\\\\\\\":\\\\\\\"Default zoom level set by user. Accepts values from 0 to 22\\\\\\\",\\\\\\\"CenterLocation_Display_Key\\\\\\\":\\\\\\\"Center location\\\\\\\",\\\\\\\"CenterLocation_Desc_Key\\\\\\\":\\\\\\\"Center location of the map\\\\\\\",\\\\\\\"CenterLongitude_Display_Key\\\\\\\":\\\\\\\"Center longitude\\\\\\\",\\\\\\\"CenterLongitude_Desc_Key\\\\\\\":\\\\\\\"Center longitude of the map\\\\\\\",\\\\\\\"CenterLatitude_Display_Key\\\\\\\":\\\\\\\"Center latitude\\\\\\\",\\\\\\\"CenterLatitude_Desc_Key\\\\\\\":\\\\\\\"Center latitude of the map\\\\\\\",\\\\\\\"Items_GeocodedItems_Display_Key\\\\\\\":\\\\\\\"Geocoded locations\\\\\\\",\\\\\\\"Items_GeocodedItems_Desc_Key\\\\\\\":\\\\\\\"Geocoded locations of the map\\\\\\\",\\\\\\\"ClickedLocation_Display_Key\\\\\\\":\\\\\\\"Clicked location\\\\\\\",\\\\\\\"ClickedLocation_Desc_Key\\\\\\\":\\\\\\\"Clicked location of the map\\\\\\\",\\\\\\\"ItemsAddresses_Warning_Display_Key\\\\\\\":\\\\\\\"Using addresses requires the map to geocode each time the component loads, costing credits. Save the lat/long results in your data source instead. ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"DefaultStyle_Display_Key\\\\\\\":\\\\\\\"Default style\\\\\\\",\\\\\\\"DefaultStyle_Desc_Key\\\\\\\":\\\\\\\"Default style set by user\\\\\\\",\\\\\\\"CurrentLocation_Display_Key\\\\\\\":\\\\\\\"Show current location\\\\\\\",\\\\\\\"CurrentLocation_Desc_Key\\\\\\\":\\\\\\\"Show current location on the map\\\\\\\",\\\\\\\"CurrentLocationLongitude_Display_Key\\\\\\\":\\\\\\\"Current location longitude\\\\\\\",\\\\\\\"CurrentLocationLongitude_Desc_Key\\\\\\\":\\\\\\\"Longitude of the current location pin. To place at the user's location, set to Location.Longitude\\\\\\\",\\\\\\\"CurrentLocationLatitude_Display_Key\\\\\\\":\\\\\\\"Current location latitude\\\\\\\",\\\\\\\"CurrentLocationLatitude_Desc_Key\\\\\\\":\\\\\\\"Latitude of the current location pin. To place at the user's location, set to Location.Latitude\\\\\\\",\\\\\\\"Loading_Display_Key\\\\\\\":\\\\\\\"Loading ...\\\\\\\",\\\\\\\"SatelliteView_Display_Key\\\\\\\":\\\\\\\"Satellite view\\\\\\\",\\\\\\\"SatelliteView_Desc_Key\\\\\\\":\\\\\\\"Use satellite view (overrides Map style)\\\\\\\",\\\\\\\"AddressDataSource_Display_Key\\\\\\\":\\\\\\\"Address data source\\\\\\\",\\\\\\\"AddressDataSource_Desc_Key\\\\\\\":\\\\\\\"The data source used for address formatting and geocoding.\\\\\\\",\\\\\\\"AddressDataSource_Default_Display_Key\\\\\\\":\\\\\\\"Default\\\\\\\",\\\\\\\"AddressDataSource_BingMaps_Display_Key\\\\\\\":\\\\\\\"Bing Maps\\\\\\\",\\\\\\\"AddressDataSource_AzureMaps_Display_Key\\\\\\\":\\\\\\\"Azure Maps\\\\\\\",\\\\\\\"MapStyle_Display_Key\\\\\\\":\\\\\\\"Map style\\\\\\\",\\\\\\\"MapStyle_Desc_Key\\\\\\\":\\\\\\\"Set the map style\\\\\\\",\\\\\\\"MapStyle_Road_Display_Key\\\\\\\":\\\\\\\"Road\\\\\\\",\\\\\\\"MapStyle_Satellite_Display_Key\\\\\\\":\\\\\\\"Satellite\\\\\\\",\\\\\\\"MapStyle_SatelliteRoadLabels_Display_Key\\\\\\\":\\\\\\\"Satellite road labels\\\\\\\",\\\\\\\"MapStyle_GrayscaleDark_Display_Key\\\\\\\":\\\\\\\"Grayscale dark\\\\\\\",\\\\\\\"MapStyle_GrayscaleLight_Display_Key\\\\\\\":\\\\\\\"Grayscale light\\\\\\\",\\\\\\\"MapStyle_Night_Display_Key\\\\\\\":\\\\\\\"Night\\\\\\\",\\\\\\\"MapStyle_RoadShadedRelief_Display_Key\\\\\\\":\\\\\\\"Road shaded relief\\\\\\\",\\\\\\\"MapStyle_HighContrastDark_Display_Key\\\\\\\":\\\\\\\"High contrast dark\\\\\\\",\\\\\\\"MapStyle_HighContrastLight_Display_Key\\\\\\\":\\\\\\\"High contrast light\\\\\\\",\\\\\\\"Clustering_Display_Key\\\\\\\":\\\\\\\"Cluster pins\\\\\\\",\\\\\\\"Clustering_Desc_Key\\\\\\\":\\\\\\\"Use pin clustering\\\\\\\",\\\\\\\"EnableCurrentLocationControl_Display_Key\\\\\\\":\\\\\\\"Current location control\\\\\\\",\\\\\\\"EnableCurrentLocationControl_Desc_Key\\\\\\\":\\\\\\\"Enable current location control\\\\\\\",\\\\\\\"Compass_Display_Key\\\\\\\":\\\\\\\"Compass control\\\\\\\",\\\\\\\"Compass_Desc_Key\\\\\\\":\\\\\\\"Enable compass control\\\\\\\",\\\\\\\"Zoom_Display_Key\\\\\\\":\\\\\\\"Zoom control\\\\\\\",\\\\\\\"Zoom_Desc_Key\\\\\\\":\\\\\\\"Enable zoom control\\\\\\\",\\\\\\\"Pitch_Display_Key\\\\\\\":\\\\\\\"Pitch control\\\\\\\",\\\\\\\"Pitch_Desc_Key\\\\\\\":\\\\\\\"Enable pitch control\\\\\\\",\\\\\\\"Style_Display_Key\\\\\\\":\\\\\\\"Style control\\\\\\\",\\\\\\\"Style_Desc_Key\\\\\\\":\\\\\\\"Enable style control\\\\\\\",\\\\\\\"PinColor_Display_Key\\\\\\\":\\\\\\\"Pin color\\\\\\\",\\\\\\\"PinColor_Desc_Key\\\\\\\":\\\\\\\"Color of pins shown on the map\\\\\\\",\\\\\\\"ShowDirections\\\\\\\":\\\\\\\"Show Directions\\\\\\\",\\\\\\\"ShowDirections_Desc_Key\\\\\\\":\\\\\\\"Show a directions on info cards when a pin is clicked.\\\\\\\",\\\\\\\"Bounds_Display_Key\\\\\\\":\\\\\\\"Bounds\\\\\\\",\\\\\\\"Bounds_Desc_Key\\\\\\\":\\\\\\\"A record defining the current North, South, East, and West bounds of the map.\\\\\\\",\\\\\\\"MaxPins_Display_Key\\\\\\\":\\\\\\\"Maximum map pins\\\\\\\",\\\\\\\"MaxPins_Desc_Key\\\\\\\":\\\\\\\"Maximum number of pins shown on the map\\\\\\\",\\\\\\\"TrafficIncidents_Display_Key\\\\\\\":\\\\\\\"Show traffic incidents\\\\\\\",\\\\\\\"TrafficIncidents_Desc_Key\\\\\\\":\\\\\\\"Show traffic incidents on the map\\\\\\\",\\\\\\\"TrafficFlowTypes_Display_Key\\\\\\\":\\\\\\\"Traffic flow types\\\\\\\",\\\\\\\"TrafficFlowTypes_Desc_Key\\\\\\\":\\\\\\\"Traffic flow types on the map\\\\\\\",\\\\\\\"RefreshExpiredTiles_Display_Key\\\\\\\":\\\\\\\"Refresh expired tiles\\\\\\\",\\\\\\\"RefreshExpiredTiles_Desc_Key\\\\\\\":\\\\\\\"Refresh expired tiles on the map\\\\\\\",\\\\\\\"RefreshExpiredTilesWarnHighUsage_Display_Key\\\\\\\":\\\\\\\"Refreshing expired tiles is turned on. Learn how this increases your daily credit count usage here.\\\\\\\",\\\\\\\"Map_TrafficFlowTypes_None_Display_Key\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"Map_TrafficFlowTypes_Relative_Display_Key\\\\\\\":\\\\\\\"Relative\\\\\\\",\\\\\\\"Map_TrafficFlowTypes_RelativeDelayOnly_Display_Key\\\\\\\":\\\\\\\"Relative delay only\\\\\\\",\\\\\\\"UseRouting_Display_Key\\\\\\\":\\\\\\\"Enable routing\\\\\\\",\\\\\\\"UseRouting_Desc_Key\\\\\\\":\\\\\\\"Enable routing on the map. Routes cannot be shown until you enable full map and address services in the admin center\\\\\\\",\\\\\\\"RouteMaintainFirst_Display_Key\\\\\\\":\\\\\\\"Maintain first waypoint\\\\\\\",\\\\\\\"RouteMaintainFirst_Desc_Key\\\\\\\":\\\\\\\"Maintain first waypoint when calculating a route\\\\\\\",\\\\\\\"RouteMaintainLast_Display_Key\\\\\\\":\\\\\\\"Maintain last waypoint\\\\\\\",\\\\\\\"RouteMaintainLast_Desc_Key\\\\\\\":\\\\\\\"Maintain last waypoint when calculating a route\\\\\\\",\\\\\\\"RouteMaintainOrder_Display_Key\\\\\\\":\\\\\\\"Maintain waypoint order\\\\\\\",\\\\\\\"RouteMaintainOrder_Desc_Key\\\\\\\":\\\\\\\"Maintain waypoint order when calculating a route\\\\\\\",\\\\\\\"RouteOptimization_Display_Key\\\\\\\":\\\\\\\"Optimize route\\\\\\\",\\\\\\\"RouteOptimization_Desc_Key\\\\\\\":\\\\\\\"Optimize route when calculating a route\\\\\\\",\\\\\\\"RouteOptimization_None_Display_Key\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"RouteOptimization_Time_Display_Key\\\\\\\":\\\\\\\"Time\\\\\\\",\\\\\\\"RouteOptimization_Distance_Display_Key\\\\\\\":\\\\\\\"Distance\\\\\\\",\\\\\\\"ShowRoutePins_Display_Key\\\\\\\":\\\\\\\"Show Route Pins\\\\\\\",\\\\\\\"ShowRoutePins_Desc_Key\\\\\\\":\\\\\\\"Show pins over route waypoints\\\\\\\",\\\\\\\"TravelMode_Display_Key\\\\\\\":\\\\\\\"Route travel mode\\\\\\\",\\\\\\\"TravelMode_Desc_Key\\\\\\\":\\\\\\\"Route travel mode for route calculation\\\\\\\",\\\\\\\"TravelMode_Car_Display_Key\\\\\\\":\\\\\\\"Car\\\\\\\",\\\\\\\"TravelMode_Truck_Display_Key\\\\\\\":\\\\\\\"Truck\\\\\\\",\\\\\\\"Avoid_Display_Key\\\\\\\":\\\\\\\"Route avoidance\\\\\\\",\\\\\\\"Avoid_Desc_Key\\\\\\\":\\\\\\\"Avoidance for route calculations\\\\\\\",\\\\\\\"AvoidNone_Display_Key\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"AvoidNone_Desc_Key\\\\\\\":\\\\\\\"Avoid nothing for route calculations\\\\\\\",\\\\\\\"AvoidHighways_Display_Key\\\\\\\":\\\\\\\"Highways\\\\\\\",\\\\\\\"AvoidHighways_Desc_Key\\\\\\\":\\\\\\\"Avoid highways for route calculations\\\\\\\",\\\\\\\"AvoidTolls_Display_Key\\\\\\\":\\\\\\\"Tolls\\\\\\\",\\\\\\\"AvoidTolls_Desc_Key\\\\\\\":\\\\\\\"Avoid tolls for route calculations\\\\\\\",\\\\\\\"AvoidUnpavedRoads_Display_Key\\\\\\\":\\\\\\\"Unpaved roads\\\\\\\",\\\\\\\"AvoidUnpavedRoads_Desc_Key\\\\\\\":\\\\\\\"Avoid unpaved roads for route calculations\\\\\\\",\\\\\\\"AvoidFerries_Display_Key\\\\\\\":\\\\\\\"Ferries\\\\\\\",\\\\\\\"AvoidFerries_Desc_Key\\\\\\\":\\\\\\\"Avoid ferries for route calculations\\\\\\\",\\\\\\\"InfoCards_Display_Key\\\\\\\":\\\\\\\"Show info cards\\\\\\\",\\\\\\\"InfoCards_Desc_Key\\\\\\\":\\\\\\\"Show info cards on the map\\\\\\\",\\\\\\\"InfoCards_None_Display_Key\\\\\\\":\\\\\\\"None\\\\\\\",\\\\\\\"InfoCards_OnClick_Display_Key\\\\\\\":\\\\\\\"On click\\\\\\\",\\\\\\\"InfoCards_OnHover_Display_Key\\\\\\\":\\\\\\\"On hover\\\\\\\",\\\\\\\"Transparency_Display_Key\\\\\\\":\\\\\\\"Transparency\\\\\\\",\\\\\\\"Transparency_Desc_Key\\\\\\\":\\\\\\\"Transparency of the map\\\\\\\",\\\\\\\"BorderStyle_Display_Key\\\\\\\":\\\\\\\"Border style\\\\\\\",\\\\\\\"BorderStyle_Desc_Key\\\\\\\":\\\\\\\"Style of visual borders\\\\\\\",\\\\\\\"BorderThickness_Display_Key\\\\\\\":\\\\\\\"Border thickness\\\\\\\",\\\\\\\"BorderThickness_Desc_Key\\\\\\\":\\\\\\\"Thickness (width) of visual borders\\\\\\\",\\\\\\\"BorderColor_Display_Key\\\\\\\":\\\\\\\"Border color\\\\\\\",\\\\\\\"BorderColor_Desc_Key\\\\\\\":\\\\\\\"Color of visual borders\\\\\\\",\\\\\\\"BorderRadius_Display_Key\\\\\\\":\\\\\\\"Border radius\\\\\\\",\\\\\\\"BorderRadius_Desc_Key\\\\\\\":\\\\\\\"Radius of visual borders\\\\\\\",\\\\\\\"TabIndex_Display_Key\\\\\\\":\\\\\\\"Tab index\\\\\\\",\\\\\\\"TabIndex_Desc_Key\\\\\\\":\\\\\\\"Specifies the order when the user navigates with the Tab key\\\\\\\",\\\\\\\"ConnectionError_Display_Key\\\\\\\":\\\\\\\"Cannot connect to mapping service. Check your internet connection or visit ##LINK0## Azure Status ##/LINK0## for more information.\\\\\\\",\\\\\\\"WebGLError_Display_Key\\\\\\\":\\\\\\\"WebGL isn't enabled for your browser. Read the documentation at ##LINK0## enabling WebGL ##/LINK0## to resolve this issue.\\\\\\\",\\\\\\\"InternetExplorerError_Display_Key\\\\\\\":\\\\\\\"Internet Explorer doesn't support the Map control. Edit or use this app and use this feature in a modern browser (such as Microsoft Edge). Check the ##LINK0## Supported Browsers List ##/LINK0## for more information.\\\\\\\",\\\\\\\"MaxWaypointExceeded_Display_Key\\\\\\\":\\\\\\\"Exceeded maximum number of waypoints (150). ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"GeospatialOrganizationSettingError_Display_Key\\\\\\\":\\\\\\\"Maps cannot be shown. To show them, enable map and address services in the admin center. ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"GeospatialOrganizationSettingFieldServiceError_Display_Key\\\\\\\":\\\\\\\"Maps cannot be shown in your environment. Please contact your IT administrator. If you are an admin, click ##LINK0## here ##/LINK0## to learn more.\\\\\\\",\\\\\\\"GeospatialLimitedOrganizationSettingRoutingError_Display_Key\\\\\\\":\\\\\\\"Routes cannot be shown. To show them, enable full map and address services in the admin center. ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"CDSOrganizationsDatasourceError_Display_Key\\\\\\\":\\\\\\\"This component requires the Organizations data source to provide mapping information. Please re-add the Organizations data source. ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"DataLossPreventionError_Display_Key\\\\\\\":\\\\\\\"This component requires the Microsoft Spatial Services connector. Using this connector conflicts with your company's data loss prevention policies. ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"DataLossPrevention2Error_Display_Key\\\\\\\":\\\\\\\"This component requires the Power Apps Geospatial Control Services connector. Using this connector conflicts with your company's data loss prevention policies. ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"MaxPinsMakerError_Display_Key\\\\\\\":\\\\\\\"This data set contains more pins than the maximum limit (5000). Only the first 5000 pins will be shown on the map.\\\\\\\",\\\\\\\"MaxAddressesMakerError_Display_Key\\\\\\\":\\\\\\\"This data set contains more addresses than the maximum limit (50). Only the first 50 addresses will be shown on the map.\\\\\\\",\\\\\\\"MaxPinsAndAddressesMakerError_Display_Key\\\\\\\":\\\\\\\"This data set contains more pins than the maximum limit (5000) and more addresses than the maximum limit (50). Only the first 50 addresses will be shown on the map, with a total pin limit of 5000.\\\\\\\",\\\\\\\"MaxPinsUserError_Display_Key\\\\\\\":\\\\\\\"There are more pins than can be shown. Contact the app developer or your admin for more information.\\\\\\\",\\\\\\\"AriaSVGImage_Display_Key\\\\\\\":\\\\\\\"Icon showing the world\\\\\\\",\\\\\\\"InvalidKeyError_Display_Key\\\\\\\":\\\\\\\"The Map component requires a valid Azure Maps license key to be ##LINK0## entered in the properties panel ##/LINK0##. If you don't have an Azure Maps license you can setup a trial license ##LINK1## here ##/LINK1##.\\\\\\\",\\\\\\\"S1KeyNeededError_Display_Key\\\\\\\":\\\\\\\"Satellite view requires an S1 Azure Maps subscription and the provided key is for an S0 subscription. ##LINK0## Learn more ##/LINK0##\\\\\\\",\\\\\\\"Continue_Display_Key\\\\\\\":\\\\\\\"Continue\\\\\\\",\\\\\\\"Cancel_Display_Key\\\\\\\":\\\\\\\"Cancel\\\\\\\",\\\\\\\"True_Display_Key\\\\\\\":\\\\\\\"True\\\\\\\",\\\\\\\"False_Display_Key\\\\\\\":\\\\\\\"False\\\\\\\",\\\\\\\"Width_Display_Key\\\\\\\":\\\\\\\"Width\\\\\\\",\\\\\\\"Width_Desc_Key\\\\\\\":\\\\\\\"Width of the visual\\\\\\\",\\\\\\\"Height_Display_Key\\\\\\\":\\\\\\\"Height\\\\\\\",\\\\\\\"Height_Desc_Key\\\\\\\":\\\\\\\"Height of the visual\\\\\\\",\\\\\\\"Shapes_Display_Key\\\\\\\":\\\\\\\"Shapes\\\\\\\",\\\\\\\"Shapes_Desc_Key\\\\\\\":\\\\\\\"Data set specifying shapes to be put on the map. Requires ShapeGeoJSONObjects column and optional Shape label and Shape color columns.\\\\\\\",\\\\\\\"ShapeGeoJSONObjects_Display_Key\\\\\\\":\\\\\\\"Shape GeoJSON Objects\\\\\\\",\\\\\\\"ShapeGeoJSONObjects_Desc_Key\\\\\\\":\\\\\\\"Required column specifying GeoJSON shapes to be put on the map (in shape collection or single shape GeoJSON format).\\\\\\\",\\\\\\\"ShapeLabels_Display_Key\\\\\\\":\\\\\\\"Shape label\\\\\\\",\\\\\\\"ShapeLabels_Desc_Key\\\\\\\":\\\\\\\"Optional column specifying a label to go with the corresponding GeoJSON.\\\\\\\",\\\\\\\"ShapeColors_Display_Key\\\\\\\":\\\\\\\"Shape color\\\\\\\",\\\\\\\"ShapeColors_Desc_Key\\\\\\\":\\\\\\\"Optional column specifying a CSS color to go with the corresponding GeoJSON.\\\\\\\",\\\\\\\"GeoJSON_Display_Key\\\\\\\":\\\\\\\"GeoJSON\\\\\\\",\\\\\\\"GeoJSON_Desc_Key\\\\\\\":\\\\\\\"List of features on the map (in feature collection GeoJSON format).\\\\\\\",\\\\\\\"SelectedShape_Display_Key\\\\\\\":\\\\\\\"Selected shape\\\\\\\",\\\\\\\"SelectedShape_Desc_Key\\\\\\\":\\\\\\\"Single shape GeoJSON of the selected shape, or empty shape collection GeoJSON if no shape is selected.\\\\\\\",\\\\\\\"DeletedShape_Display_Key\\\\\\\":\\\\\\\"Deleted shape\\\\\\\",\\\\\\\"DeletedShape_Desc_Key\\\\\\\":\\\\\\\"Single shape GeoJSON of the most recently deleted shape, or empty shape collection GeoJSON if no shape was deleted.\\\\\\\",\\\\\\\"RouteDirections_Display_Key\\\\\\\":\\\\\\\"Route directions\\\\\\\",\\\\\\\"RouteDirections_Desc_Key\\\\\\\":\\\\\\\"Optimal route direction collection from source to destination route waypoint when routing is enabled.\\\\\\\",\\\\\\\"OnRouteDirectionChange_Display_Key\\\\\\\":\\\\\\\"OnRouteDirectionChange\\\\\\\",\\\\\\\"OnRouteDirectionChange_Desc_Key\\\\\\\":\\\\\\\"How the app responds when route direction is changed.\\\\\\\",\\\\\\\"OnLoad_Display_Key\\\\\\\":\\\\\\\"OnLoad\\\\\\\",\\\\\\\"OnLoad_Desc_Key\\\\\\\":\\\\\\\"How the app responds when the map finishes loading.\\\\\\\",\\\\\\\"OnItemsChange_Display_Key\\\\\\\":\\\\\\\"OnItemsChange\\\\\\\",\\\\\\\"OnItemsChange_Desc_Key\\\\\\\":\\\\\\\"How the app responds when the map locations change.\\\\\\\",\\\\\\\"OnMapClick_Display_Key\\\\\\\":\\\\\\\"OnMapClick\\\\\\\",\\\\\\\"OnMapClick_Desc_Key\\\\\\\":\\\\\\\"How the app responds when any location is clicked.\\\\\\\",\\\\\\\"OnShapeCreated_Display_Key\\\\\\\":\\\\\\\"OnShapeCreated\\\\\\\",\\\\\\\"OnShapeCreated_Desc_Key\\\\\\\":\\\\\\\"How the app responds when a shape on the map is created.\\\\\\\",\\\\\\\"OnShapeSelected_Display_Key\\\\\\\":\\\\\\\"OnShapeSelected\\\\\\\",\\\\\\\"OnShapeSelected_Desc_Key\\\\\\\":\\\\\\\"How the app responds when a shape on the map is selected.\\\\\\\",\\\\\\\"OnShapeEdited_Display_Key\\\\\\\":\\\\\\\"OnShapeEdited\\\\\\\",\\\\\\\"OnShapeEdited_Desc_Key\\\\\\\":\\\\\\\"How the app responds when a shape on the map is edited.\\\\\\\",\\\\\\\"OnShapeDeleted_Display_Key\\\\\\\":\\\\\\\"OnShapeDeleted\\\\\\\",\\\\\\\"OnShapeDeleted_Desc_Key\\\\\\\":\\\\\\\"How the app responds when a shape on the map is deleted.\\\\\\\",\\\\\\\"ShowShapes_Display_Key\\\\\\\":\\\\\\\"Show shapes\\\\\\\",\\\\\\\"ShowShapes_Desc_Key\\\\\\\":\\\\\\\"Show imported shapes on the map.\\\\\\\",\\\\\\\"ShowShapeLabels_Display_Key\\\\\\\":\\\\\\\"Show shape labels\\\\\\\",\\\\\\\"ShowShapeLabels_Desc_Key\\\\\\\":\\\\\\\"Show shape labels on the map.\\\\\\\",\\\\\\\"ShapeDrawing_Display_Key\\\\\\\":\\\\\\\"(Preview) Enable shape drawing\\\\\\\",\\\\\\\"ShapeDrawing_Desc_Key\\\\\\\":\\\\\\\"(Preview) Enable drawing shapes on the map by the map user.\\\\\\\",\\\\\\\"ShapeEditingDeleting_Display_Key\\\\\\\":\\\\\\\"(Preview) Enable shape deleting and label editing\\\\\\\",\\\\\\\"ShapeEditingDeleting_Desc_Key\\\\\\\":\\\\\\\"(Preview) Enable shape deleting and label editing on the map by the map user.\\\\\\\",\\\\\\\"ShapeLabel_Display_Key\\\\\\\":\\\\\\\"Shape {0}\\\\\\\",\\\\\\\"DeleteShape_Display_Key\\\\\\\":\\\\\\\"Delete shape\\\\\\\",\\\\\\\"EditLabel_Display_Key\\\\\\\":\\\\\\\"Edit shape label\\\\\\\",\\\\\\\"ShapeTitle_Display_Key\\\\\\\":\\\\\\\"Label for the selected shape\\\\\\\",\\\\\\\"Confirm_Display_Key\\\\\\\":\\\\\\\"Confirm shape label\\\\\\\",\\\\\\\"MaxGeoJSONError_Display_Key\\\\\\\":\\\\\\\"This data set contains more GeoJSON objects than the maximum limit ({0}). Only the first {0} GeoJSON objects will be shown on the map.\\\\\\\",\\\\\\\"InvalidGeoJSONError_Display_Key\\\\\\\":\\\\\\\"This data set contains some invalid GeoJSON objects. Some of the GeoJSON objects will not be shown.\\\\\\\",\\\\\\\"MaxAndInvalidGeoJSONError_Display_Key\\\\\\\":\\\\\\\"This data set contains more GeoJSON objects than the maximum limit ({0}) and some invalid GeoJSON objects. Only the first {0} valid GeoJSON objects will be shown on the map.\\\\\\\",\\\\\\\"GeoJSONUserError_Display_Key\\\\\\\":\\\\\\\"There are GeoJSON objects that can't be shown. Contact the app developer or your admin for more information.\\\\\\\",\\\\\\\"InvalidRouteError_Display_Key\\\\\\\":\\\\\\\"A route for the given waypoints cannot be provided. Try removing waypoints across bodies of water or disabling routing.\\\\\\\",\\\\\\\"Directions_Display_Key\\\\\\\":\\\\\\\"Directions ({0})\\\\\\\",\\\\\\\"AppleMaps_Display_Key\\\\\\\":\\\\\\\"Apple Maps\\\\\\\",\\\\\\\"GoogleMaps_Display_Key\\\\\\\":\\\\\\\"Google Maps\\\\\\\",\\\\\\\"BingMaps_Display_Key\\\\\\\":\\\\\\\"Bing Maps\\\\\\\",\\\\\\\"CurrentLocationControl_Tooltip\\\\\\\":\\\\\\\"Locate me\\\\\\\",\\\\\\\"CurrentLocationControl_LocationPermissions_ErrorText\\\\\\\":\\\\\\\"Cannot get your location. Please enable location settings for this app.\\\\\\\",\\\\\\\"Pin_NarratorText_Display_Key\\\\\\\":\\\\\\\"Pin location at latitude {0}, longitude {1}\\\\\\\",\\\\\\\"Pin_GeocodeError_Display_Key\\\\\\\":\\\\\\\"{0} pins from addresses cannot be shown. To show them, enable full map and address services in the admin center. Click to learn more.\\\\\\\"}}}\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":18,\\\"IsControlSpecific\\\":false},{\\\"Type\\\":0,\\\"Path\\\":\\\"/PCF/fluentui-react.js\\\",\\\"ModifiedPath\\\":\\\"\\\",\\\"LoadingOrder\\\":5,\\\"IsControlSpecific\\\":false}]\",\"Properties\":\"[{\\\"Name\\\":\\\"AddressDataSource\\\",\\\"DisplayName\\\":\\\"Address data source\\\",\\\"Description\\\":\\\"The data source used for address formatting and geocoding.\\\",\\\"Type\\\":1,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"Default\\\",\\\"PhoneDefaultValue\\\":\\\"Default\\\",\\\"WebDefaultValue\\\":\\\"Default\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[{\\\"Name\\\":\\\"Default\\\",\\\"DisplayName\\\":\\\"Default\\\",\\\"Description\\\":\\\"Default\\\",\\\"IsDefaultValue\\\":true,\\\"Value\\\":\\\"Default\\\"},{\\\"Name\\\":\\\"BingMaps\\\",\\\"DisplayName\\\":\\\"Bing Maps\\\",\\\"Description\\\":\\\"Bing Maps\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"BingMaps\\\"},{\\\"Name\\\":\\\"AzureMaps\\\",\\\"DisplayName\\\":\\\"Azure Maps\\\",\\\"Description\\\":\\\"Azure Maps\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"AzureMaps\\\"}],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"AddressDataSource_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"AddressDataSource_Desc_Key\\\"},{\\\"Name\\\":\\\"DefaultLocation\\\",\\\"DisplayName\\\":\\\"Use default location\\\",\\\"Description\\\":\\\"Use default location set by user\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"false\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DefaultLocation_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"DefaultLocation_Desc_Key\\\"},{\\\"Name\\\":\\\"DefaultLatitude\\\",\\\"DisplayName\\\":\\\"Default latitude\\\",\\\"Description\\\":\\\"Default latitude set by user\\\",\\\"Type\\\":15,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"47.642967\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DefaultLatitude_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"DefaultLatitude_Desc_Key\\\"},{\\\"Name\\\":\\\"DefaultLongitude\\\",\\\"DisplayName\\\":\\\"Default longitude\\\",\\\"Description\\\":\\\"Default longitude set by user\\\",\\\"Type\\\":15,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"-122.126801\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DefaultLongitude_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"DefaultLongitude_Desc_Key\\\"},{\\\"Name\\\":\\\"DefaultZoomLevel\\\",\\\"DisplayName\\\":\\\"Default zoom level\\\",\\\"Description\\\":\\\"Default zoom level set by user. Accepts values from 0 to 22\\\",\\\"Type\\\":16,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"16\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DefaultZoomLevel_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"DefaultZoomLevel_Desc_Key\\\"},{\\\"Name\\\":\\\"CurrentLocation\\\",\\\"DisplayName\\\":\\\"Show current location\\\",\\\"Description\\\":\\\"Show current location on the map\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"false\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CurrentLocation_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"CurrentLocation_Desc_Key\\\"},{\\\"Name\\\":\\\"CurrentLocationLatitude\\\",\\\"DisplayName\\\":\\\"Current location latitude\\\",\\\"Description\\\":\\\"Latitude of the current location pin. To place at the user's location, set to Location.Latitude\\\",\\\"Type\\\":15,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"0\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CurrentLocationLatitude_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"CurrentLocationLatitude_Desc_Key\\\"},{\\\"Name\\\":\\\"CurrentLocationLongitude\\\",\\\"DisplayName\\\":\\\"Current location longitude\\\",\\\"Description\\\":\\\"Longitude of the current location pin. To place at the user's location, set to Location.Longitude\\\",\\\"Type\\\":15,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"0\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CurrentLocationLongitude_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"CurrentLocationLongitude_Desc_Key\\\"},{\\\"Name\\\":\\\"MapStyle\\\",\\\"DisplayName\\\":\\\"Map style\\\",\\\"Description\\\":\\\"Set the map style\\\",\\\"Type\\\":1,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"Road\\\",\\\"PhoneDefaultValue\\\":\\\"Road\\\",\\\"WebDefaultValue\\\":\\\"Road\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[{\\\"Name\\\":\\\"Road\\\",\\\"DisplayName\\\":\\\"Road\\\",\\\"Description\\\":\\\"Road\\\",\\\"IsDefaultValue\\\":true,\\\"Value\\\":\\\"Road\\\"},{\\\"Name\\\":\\\"Satellite\\\",\\\"DisplayName\\\":\\\"Satellite\\\",\\\"Description\\\":\\\"Satellite\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"Satellite\\\"},{\\\"Name\\\":\\\"SatelliteRoadLabels\\\",\\\"DisplayName\\\":\\\"Satellite road labels\\\",\\\"Description\\\":\\\"Satellite road labels\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"SatelliteRoadLabels\\\"},{\\\"Name\\\":\\\"GrayscaleDark\\\",\\\"DisplayName\\\":\\\"Grayscale dark\\\",\\\"Description\\\":\\\"Grayscale dark\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"GrayscaleDark\\\"},{\\\"Name\\\":\\\"GrayscaleLight\\\",\\\"DisplayName\\\":\\\"Grayscale light\\\",\\\"Description\\\":\\\"Grayscale light\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"GrayscaleLight\\\"},{\\\"Name\\\":\\\"Night\\\",\\\"DisplayName\\\":\\\"Night\\\",\\\"Description\\\":\\\"Night\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"Night\\\"},{\\\"Name\\\":\\\"RoadShadedRelief\\\",\\\"DisplayName\\\":\\\"Road shaded relief\\\",\\\"Description\\\":\\\"Road shaded relief\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"RoadShadedRelief\\\"},{\\\"Name\\\":\\\"HighContrastDark\\\",\\\"DisplayName\\\":\\\"High contrast dark\\\",\\\"Description\\\":\\\"High contrast dark\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"HighContrastDark\\\"},{\\\"Name\\\":\\\"HighContrastLight\\\",\\\"DisplayName\\\":\\\"High contrast light\\\",\\\"Description\\\":\\\"High contrast light\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"HighContrastLight\\\"}],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"MapStyle_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"MapStyle_Desc_Key\\\"},{\\\"Name\\\":\\\"SatelliteView\\\",\\\"DisplayName\\\":\\\"Satellite view\\\",\\\"Description\\\":\\\"Use satellite view (overrides Map style)\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"false\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"SatelliteView_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"SatelliteView_Desc_Key\\\"},{\\\"Name\\\":\\\"Clustering\\\",\\\"DisplayName\\\":\\\"Cluster pins\\\",\\\"Description\\\":\\\"Use pin clustering\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Clustering_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"Clustering_Desc_Key\\\"},{\\\"Name\\\":\\\"Compass\\\",\\\"DisplayName\\\":\\\"Compass control\\\",\\\"Description\\\":\\\"Enable compass control\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Compass_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"Compass_Desc_Key\\\"},{\\\"Name\\\":\\\"Zoom\\\",\\\"DisplayName\\\":\\\"Zoom control\\\",\\\"Description\\\":\\\"Enable zoom control\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Zoom_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"Zoom_Desc_Key\\\"},{\\\"Name\\\":\\\"Pitch\\\",\\\"DisplayName\\\":\\\"Pitch control\\\",\\\"Description\\\":\\\"Enable pitch control\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Pitch_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"Pitch_Desc_Key\\\"},{\\\"Name\\\":\\\"InfoCards\\\",\\\"DisplayName\\\":\\\"Show info cards\\\",\\\"Description\\\":\\\"Show info cards on the map\\\",\\\"Type\\\":1,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"None\\\",\\\"PhoneDefaultValue\\\":\\\"None\\\",\\\"WebDefaultValue\\\":\\\"None\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[{\\\"Name\\\":\\\"None\\\",\\\"DisplayName\\\":\\\"None\\\",\\\"Description\\\":\\\"None\\\",\\\"IsDefaultValue\\\":true,\\\"Value\\\":\\\"None\\\"},{\\\"Name\\\":\\\"OnClick\\\",\\\"DisplayName\\\":\\\"On click\\\",\\\"Description\\\":\\\"On click\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"OnClick\\\"},{\\\"Name\\\":\\\"OnHover\\\",\\\"DisplayName\\\":\\\"On hover\\\",\\\"Description\\\":\\\"On hover\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"OnHover\\\"}],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"InfoCards_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"InfoCards_Desc_Key\\\"},{\\\"Name\\\":\\\"PinColor\\\",\\\"DisplayName\\\":\\\"Pin color\\\",\\\"Description\\\":\\\"Color of pins shown on the map\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#1D72A9\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"color\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"PinColor_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"PinColor_Desc_Key\\\"},{\\\"Name\\\":\\\"ShowShapes\\\",\\\"DisplayName\\\":\\\"Show shapes\\\",\\\"Description\\\":\\\"Show imported shapes on the map.\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ShowShapes_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShowShapes_Desc_Key\\\"},{\\\"Name\\\":\\\"ShowShapeLabels\\\",\\\"DisplayName\\\":\\\"Show shape labels\\\",\\\"Description\\\":\\\"Show shape labels on the map.\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ShowShapeLabels_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShowShapeLabels_Desc_Key\\\"},{\\\"Name\\\":\\\"ShapeDrawing\\\",\\\"DisplayName\\\":\\\"(Preview) Enable shape drawing\\\",\\\"Description\\\":\\\"(Preview) Enable drawing shapes on the map by the map user.\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"false\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ShapeDrawing_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShapeDrawing_Desc_Key\\\"},{\\\"Name\\\":\\\"ShapeEditingDeleting\\\",\\\"DisplayName\\\":\\\"(Preview) Enable shape deleting and label editing\\\",\\\"Description\\\":\\\"(Preview) Enable shape deleting and label editing on the map by the map user.\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"false\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ShapeEditingDeleting_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShapeEditingDeleting_Desc_Key\\\"},{\\\"Name\\\":\\\"UseRouting\\\",\\\"DisplayName\\\":\\\"Enable routing\\\",\\\"Description\\\":\\\"Enable routing on the map. Routes cannot be shown until you enable full map and address services in the admin center\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"false\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"UseRouting_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"UseRouting_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteMaintainOrder\\\",\\\"DisplayName\\\":\\\"Maintain waypoint order\\\",\\\"Description\\\":\\\"Maintain waypoint order when calculating a route\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"false\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"RouteMaintainOrder_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"RouteMaintainOrder_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteOptimization\\\",\\\"DisplayName\\\":\\\"Optimize route\\\",\\\"Description\\\":\\\"Optimize route when calculating a route\\\",\\\"Type\\\":1,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"None\\\",\\\"PhoneDefaultValue\\\":\\\"None\\\",\\\"WebDefaultValue\\\":\\\"None\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[{\\\"Name\\\":\\\"None\\\",\\\"DisplayName\\\":\\\"None\\\",\\\"Description\\\":\\\"None\\\",\\\"IsDefaultValue\\\":true,\\\"Value\\\":\\\"None\\\"},{\\\"Name\\\":\\\"Time\\\",\\\"DisplayName\\\":\\\"Time\\\",\\\"Description\\\":\\\"Time\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"Time\\\"},{\\\"Name\\\":\\\"Distance\\\",\\\"DisplayName\\\":\\\"Distance\\\",\\\"Description\\\":\\\"Distance\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"Distance\\\"}],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"RouteOptimization_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"RouteOptimization_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteTravelMode\\\",\\\"DisplayName\\\":\\\"Route travel mode\\\",\\\"Description\\\":\\\"Route travel mode for route calculation\\\",\\\"Type\\\":1,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"Car\\\",\\\"PhoneDefaultValue\\\":\\\"Car\\\",\\\"WebDefaultValue\\\":\\\"Car\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[{\\\"Name\\\":\\\"Car\\\",\\\"DisplayName\\\":\\\"Car\\\",\\\"Description\\\":\\\"Car\\\",\\\"IsDefaultValue\\\":true,\\\"Value\\\":\\\"Car\\\"},{\\\"Name\\\":\\\"Truck\\\",\\\"DisplayName\\\":\\\"Truck\\\",\\\"Description\\\":\\\"Truck\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"Truck\\\"}],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"TravelMode_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"TravelMode_Desc_Key\\\"},{\\\"Name\\\":\\\"ShowRoutePins\\\",\\\"DisplayName\\\":\\\"Show Route Pins\\\",\\\"Description\\\":\\\"Show pins over route waypoints\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ShowRoutePins_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShowRoutePins_Desc_Key\\\"},{\\\"Name\\\":\\\"Transparency\\\",\\\"DisplayName\\\":\\\"Transparency\\\",\\\"Description\\\":\\\"Transparency of the map\\\",\\\"Type\\\":16,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"0\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Transparency_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"Transparency_Desc_Key\\\"},{\\\"Name\\\":\\\"BorderStyle\\\",\\\"DisplayName\\\":\\\"Border style\\\",\\\"Description\\\":\\\"Style of visual borders\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"solid\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"BorderStyle_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"BorderStyle_Desc_Key\\\"},{\\\"Name\\\":\\\"BorderThickness\\\",\\\"DisplayName\\\":\\\"Border thickness\\\",\\\"Description\\\":\\\"Thickness (width) of visual borders\\\",\\\"Type\\\":16,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"0\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"BorderThickness_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"BorderThickness_Desc_Key\\\"},{\\\"Name\\\":\\\"BorderColor\\\",\\\"DisplayName\\\":\\\"Border color\\\",\\\"Description\\\":\\\"Color of visual borders\\\",\\\"Type\\\":6,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"#00126B\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"color\\\",\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"BorderColor_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"BorderColor_Desc_Key\\\"},{\\\"Name\\\":\\\"BorderRadius\\\",\\\"DisplayName\\\":\\\"Border radius\\\",\\\"Description\\\":\\\"Radius of visual borders\\\",\\\"Type\\\":16,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"0\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"Design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"BorderRadius_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"BorderRadius_Desc_Key\\\"},{\\\"Name\\\":\\\"TabIndex\\\",\\\"DisplayName\\\":\\\"Tab index\\\",\\\"Description\\\":\\\"Specifies the order when the user navigates with the Tab key\\\",\\\"Type\\\":16,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"0\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":null,\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"TabIndex_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"TabIndex_Desc_Key\\\"},{\\\"Name\\\":\\\"CanvasApp\\\",\\\"DisplayName\\\":\\\"CanvasApp\\\",\\\"Description\\\":\\\"CanvasApp\\\",\\\"Type\\\":20,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CanvasApp\\\",\\\"DescriptionResourceString\\\":\\\"CanvasApp\\\"},{\\\"Name\\\":\\\"PinIcons\\\",\\\"DisplayName\\\":\\\"Pin Icons\\\",\\\"Description\\\":\\\"Pin Icons\\\",\\\"Type\\\":1,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"marker\\\",\\\"PhoneDefaultValue\\\":\\\"marker\\\",\\\"WebDefaultValue\\\":\\\"marker\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[{\\\"Name\\\":\\\"Marker\\\",\\\"DisplayName\\\":\\\"Marker\\\",\\\"Description\\\":\\\"Marker\\\",\\\"IsDefaultValue\\\":true,\\\"Value\\\":\\\"marker\\\"},{\\\"Name\\\":\\\"MarkerThick\\\",\\\"DisplayName\\\":\\\"Marker Thick\\\",\\\"Description\\\":\\\"Marker Thick\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-thick\\\"},{\\\"Name\\\":\\\"MarkerCircle\\\",\\\"DisplayName\\\":\\\"Marker Circle\\\",\\\"Description\\\":\\\"Marker Circle\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-circle\\\"},{\\\"Name\\\":\\\"MarkerFlat\\\",\\\"DisplayName\\\":\\\"Marker Flat\\\",\\\"Description\\\":\\\"Marker Flat\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-flat\\\"},{\\\"Name\\\":\\\"MarkerSquare\\\",\\\"DisplayName\\\":\\\"Marker Square\\\",\\\"Description\\\":\\\"Marker Square\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-square\\\"},{\\\"Name\\\":\\\"MarkerSquareCluster\\\",\\\"DisplayName\\\":\\\"Marker Square Cluster\\\",\\\"Description\\\":\\\"Marker Square Cluster\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-square-cluster\\\"},{\\\"Name\\\":\\\"MarkerArrow\\\",\\\"DisplayName\\\":\\\"Marker Arrow\\\",\\\"Description\\\":\\\"Marker Arrow\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-arrow\\\"},{\\\"Name\\\":\\\"MarkerBallPin\\\",\\\"DisplayName\\\":\\\"Marker Ball Pin\\\",\\\"Description\\\":\\\"Marker Ball Pin\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-ball-pin\\\"},{\\\"Name\\\":\\\"MarkerSquareRounded\\\",\\\"DisplayName\\\":\\\"Marker Square Rounded\\\",\\\"Description\\\":\\\"Marker Square Rounded\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-square-rounded\\\"},{\\\"Name\\\":\\\"MarkerSquareRoundedCluster\\\",\\\"DisplayName\\\":\\\"Marker Square Rounded Cluster\\\",\\\"Description\\\":\\\"Marker Square Rounded Cluster\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"marker-square-rounded-cluster\\\"},{\\\"Name\\\":\\\"Flag\\\",\\\"DisplayName\\\":\\\"Flag\\\",\\\"Description\\\":\\\"Flag\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"flag\\\"},{\\\"Name\\\":\\\"FlagTriangle\\\",\\\"DisplayName\\\":\\\"Flag Triangle\\\",\\\"Description\\\":\\\"Flag Triangle\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"flag-triangle\\\"},{\\\"Name\\\":\\\"Triangle\\\",\\\"DisplayName\\\":\\\"Triangle\\\",\\\"Description\\\":\\\"Triangle\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"triangle\\\"},{\\\"Name\\\":\\\"TriangleThick\\\",\\\"DisplayName\\\":\\\"Triangle Thick\\\",\\\"Description\\\":\\\"Triangle Thick\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"triangle-thick\\\"},{\\\"Name\\\":\\\"TriangleArrowUp\\\",\\\"DisplayName\\\":\\\"Triangle Arrow Up\\\",\\\"Description\\\":\\\"Triangle Arrow Up\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"triangle-arrow-up\\\"},{\\\"Name\\\":\\\"TriangleArrowLeft\\\",\\\"DisplayName\\\":\\\"Triangle Arrow Left\\\",\\\"Description\\\":\\\"Triangle Arrow Left\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"triangle-arrow-left\\\"},{\\\"Name\\\":\\\"Hexagon\\\",\\\"DisplayName\\\":\\\"Hexagon\\\",\\\"Description\\\":\\\"Hexagon\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"hexagon\\\"},{\\\"Name\\\":\\\"HexagonThick\\\",\\\"DisplayName\\\":\\\"Hexagon Thick\\\",\\\"Description\\\":\\\"Hexagon Thick\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"hexagon-thick\\\"},{\\\"Name\\\":\\\"HexagonRounded\\\",\\\"DisplayName\\\":\\\"Hexagon Rounded\\\",\\\"Description\\\":\\\"Hexagon Rounded\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"hexagon-rounded\\\"},{\\\"Name\\\":\\\"HexagonRoundedThick\\\",\\\"DisplayName\\\":\\\"Hexagon Rounded Thick\\\",\\\"Description\\\":\\\"Hexagon Rounded Thick\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"hexagon-rounded-thick\\\"},{\\\"Name\\\":\\\"Pin\\\",\\\"DisplayName\\\":\\\"Pin\\\",\\\"Description\\\":\\\"Pin\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"pin\\\"},{\\\"Name\\\":\\\"PinRound\\\",\\\"DisplayName\\\":\\\"Pin Round\\\",\\\"Description\\\":\\\"Pin Round\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"pin-round\\\"},{\\\"Name\\\":\\\"RoundedSquare\\\",\\\"DisplayName\\\":\\\"Rounded Square\\\",\\\"Description\\\":\\\"Rounded Square\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"rounded-square\\\"},{\\\"Name\\\":\\\"RoundedSquareThick\\\",\\\"DisplayName\\\":\\\"Rounded Square Thick\\\",\\\"Description\\\":\\\"Rounded Square Thick\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"rounded-square-thick\\\"},{\\\"Name\\\":\\\"ArrowUp\\\",\\\"DisplayName\\\":\\\"Arrow Up\\\",\\\"Description\\\":\\\"Arrow Up\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"arrow-up\\\"},{\\\"Name\\\":\\\"ArrowUpThin\\\",\\\"DisplayName\\\":\\\"Arrow Up Thin\\\",\\\"Description\\\":\\\"Arrow Up Thin\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"arrow-up-thin\\\"},{\\\"Name\\\":\\\"Car\\\",\\\"DisplayName\\\":\\\"Car\\\",\\\"Description\\\":\\\"Car\\\",\\\"IsDefaultValue\\\":false,\\\"Value\\\":\\\"car\\\"}],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Pin Icons\\\",\\\"DescriptionResourceString\\\":\\\"Pin Icons\\\"},{\\\"Name\\\":\\\"CenterLocation\\\",\\\"DisplayName\\\":\\\"Center location\\\",\\\"Description\\\":\\\"Center location of the map\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CenterLocation_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"CenterLocation_Desc_Key\\\"},{\\\"Name\\\":\\\"GeocodedItems\\\",\\\"DisplayName\\\":\\\"Geocoded locations\\\",\\\"Description\\\":\\\"Geocoded locations of the map\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Items_GeocodedItems_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"Items_GeocodedItems_Desc_Key\\\"},{\\\"Name\\\":\\\"ClickedLocation\\\",\\\"DisplayName\\\":\\\"Clicked location\\\",\\\"Description\\\":\\\"Clicked location of the map\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"ClickedLocation_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ClickedLocation_Desc_Key\\\"},{\\\"Name\\\":\\\"Bounds\\\",\\\"DisplayName\\\":\\\"Bounds\\\",\\\"Description\\\":\\\"A record defining the current North, South, East, and West bounds of the map.\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Bounds_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"Bounds_Desc_Key\\\"},{\\\"Name\\\":\\\"GeoJSON\\\",\\\"DisplayName\\\":\\\"GeoJSON\\\",\\\"Description\\\":\\\"List of features on the map (in feature collection GeoJSON format).\\\",\\\"Type\\\":12,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"GeoJSON_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"GeoJSON_Desc_Key\\\"},{\\\"Name\\\":\\\"SelectedShape\\\",\\\"DisplayName\\\":\\\"Selected shape\\\",\\\"Description\\\":\\\"Single shape GeoJSON of the selected shape, or empty shape collection GeoJSON if no shape is selected.\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"SelectedShape_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"SelectedShape_Desc_Key\\\"},{\\\"Name\\\":\\\"DeletedShape\\\",\\\"DisplayName\\\":\\\"Deleted shape\\\",\\\"Description\\\":\\\"Single shape GeoJSON of the most recently deleted shape, or empty shape collection GeoJSON if no shape was deleted.\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DeletedShape_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"DeletedShape_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteDirection\\\",\\\"DisplayName\\\":\\\"Route directions\\\",\\\"Description\\\":\\\"Optimal route direction collection from source to destination route waypoint when routing is enabled.\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":null,\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":[],\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"RouteDirections_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"RouteDirections_Desc_Key\\\"},{\\\"Name\\\":\\\"Items\\\",\\\"DisplayName\\\":\\\"Locations(##PCFDatasetItems##)\\\",\\\"Description\\\":\\\"Locations displayed on map\\\",\\\"Type\\\":26,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":true,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":true,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Locations\\\",\\\"DescriptionResourceString\\\":\\\"Locations displayed on map\\\"},{\\\"Name\\\":\\\"Selected\\\",\\\"DisplayName\\\":\\\"Locations(##PCFDatasetSelected##)\\\",\\\"Description\\\":\\\"Locations displayed on map\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"Items\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Locations\\\",\\\"DescriptionResourceString\\\":\\\"Locations displayed on map\\\"},{\\\"Name\\\":\\\"SelectedItems\\\",\\\"DisplayName\\\":\\\"Locations(##PCFDatasetSelectedItems##)\\\",\\\"Description\\\":\\\"Locations displayed on map\\\",\\\"Type\\\":26,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"Items\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Locations\\\",\\\"DescriptionResourceString\\\":\\\"Locations displayed on map\\\"},{\\\"Name\\\":\\\"ItemsLabels\\\",\\\"DisplayName\\\":\\\"Location labels\\\",\\\"Description\\\":\\\"Labels of the locations\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Items\\\",\\\"DisplayNameResourceString\\\":\\\"ItemsLabels_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ItemsLabels_Desc_Key\\\"},{\\\"Name\\\":\\\"ItemsLatitudes\\\",\\\"DisplayName\\\":\\\"Location latitudes\\\",\\\"Description\\\":\\\"Latitudes of the locations\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Items\\\",\\\"DisplayNameResourceString\\\":\\\"ItemsLatitudes_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ItemsLatitudes_Desc_Key\\\"},{\\\"Name\\\":\\\"ItemsLongitudes\\\",\\\"DisplayName\\\":\\\"Location longitudes\\\",\\\"Description\\\":\\\"Longitudes of the locations\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Items\\\",\\\"DisplayNameResourceString\\\":\\\"ItemsLongitudes_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ItemsLongitudes_Desc_Key\\\"},{\\\"Name\\\":\\\"ItemsAddresses\\\",\\\"DisplayName\\\":\\\"Location addresses\\\",\\\"Description\\\":\\\"Addresses of the locations\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Items\\\",\\\"DisplayNameResourceString\\\":\\\"ItemsAddresses_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ItemsAddresses_Desc_Key\\\"},{\\\"Name\\\":\\\"ItemsColors\\\",\\\"DisplayName\\\":\\\"Location colors\\\",\\\"Description\\\":\\\"Colors of the locations\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Items\\\",\\\"DisplayNameResourceString\\\":\\\"ItemsColors_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ItemsColors_Desc_Key\\\"},{\\\"Name\\\":\\\"ItemsIcons\\\",\\\"DisplayName\\\":\\\"Location icons\\\",\\\"Description\\\":\\\"Icons of the locations\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Items\\\",\\\"DisplayNameResourceString\\\":\\\"ItemsIcons_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ItemsIcons_Desc_Key\\\"},{\\\"Name\\\":\\\"Shapes_Items\\\",\\\"DisplayName\\\":\\\"Shapes(##PCFDatasetItems##)\\\",\\\"Description\\\":\\\"Data set specifying shapes to be put on the map. Requires ShapeGeoJSONObjects column and optional Shape label and Shape color columns.\\\",\\\"Type\\\":26,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Shapes\\\",\\\"DescriptionResourceString\\\":\\\"Data set specifying shapes to be put on the map. Requires ShapeGeoJSONObjects column and optional Shape label and Shape color columns.\\\"},{\\\"Name\\\":\\\"Shapes_Selected\\\",\\\"DisplayName\\\":\\\"Shapes(##PCFDatasetSelected##)\\\",\\\"Description\\\":\\\"Data set specifying shapes to be put on the map. Requires ShapeGeoJSONObjects column and optional Shape label and Shape color columns.\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"Shapes_Items\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Shapes\\\",\\\"DescriptionResourceString\\\":\\\"Data set specifying shapes to be put on the map. Requires ShapeGeoJSONObjects column and optional Shape label and Shape color columns.\\\"},{\\\"Name\\\":\\\"Shapes_SelectedItems\\\",\\\"DisplayName\\\":\\\"Shapes(##PCFDatasetSelectedItems##)\\\",\\\"Description\\\":\\\"Data set specifying shapes to be put on the map. Requires ShapeGeoJSONObjects column and optional Shape label and Shape color columns.\\\",\\\"Type\\\":26,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"Shapes_Items\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Shapes\\\",\\\"DescriptionResourceString\\\":\\\"Data set specifying shapes to be put on the map. Requires ShapeGeoJSONObjects column and optional Shape label and Shape color columns.\\\"},{\\\"Name\\\":\\\"ShapeGeoJSONObjects\\\",\\\"DisplayName\\\":\\\"Shape GeoJSON Objects\\\",\\\"Description\\\":\\\"Required column specifying GeoJSON shapes to be put on the map (in shape collection or single shape GeoJSON format).\\\",\\\"Type\\\":3,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Shapes_Items\\\",\\\"DisplayNameResourceString\\\":\\\"ShapeGeoJSONObjects_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShapeGeoJSONObjects_Desc_Key\\\"},{\\\"Name\\\":\\\"ShapeLabels\\\",\\\"DisplayName\\\":\\\"Shape label\\\",\\\"Description\\\":\\\"Optional column specifying a label to go with the corresponding GeoJSON.\\\",\\\"Type\\\":3,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Shapes_Items\\\",\\\"DisplayNameResourceString\\\":\\\"ShapeLabels_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShapeLabels_Desc_Key\\\"},{\\\"Name\\\":\\\"ShapeColors\\\",\\\"DisplayName\\\":\\\"Shape color\\\",\\\"Description\\\":\\\"Optional column specifying a CSS color to go with the corresponding GeoJSON.\\\",\\\"Type\\\":3,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"Shapes_Items\\\",\\\"DisplayNameResourceString\\\":\\\"ShapeColors_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"ShapeColors_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteWaypoints_Items\\\",\\\"DisplayName\\\":\\\"Route waypoints(##PCFDatasetItems##)\\\",\\\"Description\\\":\\\"Route waypoints displayed on map\\\",\\\"Type\\\":26,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Route waypoints\\\",\\\"DescriptionResourceString\\\":\\\"Route waypoints displayed on map\\\"},{\\\"Name\\\":\\\"RouteWaypoints_Selected\\\",\\\"DisplayName\\\":\\\"Route waypoints(##PCFDatasetSelected##)\\\",\\\"Description\\\":\\\"Route waypoints displayed on map\\\",\\\"Type\\\":5,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"RouteWaypoints_Items\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Route waypoints\\\",\\\"DescriptionResourceString\\\":\\\"Route waypoints displayed on map\\\"},{\\\"Name\\\":\\\"RouteWaypoints_SelectedItems\\\",\\\"DisplayName\\\":\\\"Route waypoints(##PCFDatasetSelectedItems##)\\\",\\\"Description\\\":\\\"Route waypoints displayed on map\\\",\\\"Type\\\":26,\\\"Usage\\\":1,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"RouteWaypoints_Items\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Route waypoints\\\",\\\"DescriptionResourceString\\\":\\\"Route waypoints displayed on map\\\"},{\\\"Name\\\":\\\"RouteWaypointsLabels\\\",\\\"DisplayName\\\":\\\"Route waypoint labels\\\",\\\"Description\\\":\\\"Labels of the route waypoints\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"RouteWaypoints_Items\\\",\\\"DisplayNameResourceString\\\":\\\"RoutingWaypointsLabels_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"RoutingWaypointsLabels_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteWaypointsLatitudes\\\",\\\"DisplayName\\\":\\\"Route waypoint latitudes\\\",\\\"Description\\\":\\\"Latitudes of the route waypoints\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"RouteWaypoints_Items\\\",\\\"DisplayNameResourceString\\\":\\\"RoutingWaypointsLatitudes_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"RoutingWaypointsLatitudes_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteWaypointsLongitudes\\\",\\\"DisplayName\\\":\\\"Route waypoint longitudes\\\",\\\"Description\\\":\\\"Longitudes of the route waypoints\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"RouteWaypoints_Items\\\",\\\"DisplayNameResourceString\\\":\\\"RoutingWaypointsLongitudes_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"RoutingWaypointsLongitudes_Desc_Key\\\"},{\\\"Name\\\":\\\"RouteWaypointsAddresses\\\",\\\"DisplayName\\\":\\\"Route waypoint addresses\\\",\\\"Description\\\":\\\"Addresses of the route waypoints\\\",\\\"Type\\\":3,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"data\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"RouteWaypoints_Items\\\",\\\"DisplayNameResourceString\\\":\\\"RoutingWaypointsAddresses_Display_Key\\\",\\\"DescriptionResourceString\\\":\\\"RoutingWaypointsAddresses_Desc_Key\\\"},{\\\"Name\\\":\\\"PCFTeamsTheme\\\",\\\"DisplayName\\\":\\\"PCFTeamsTheme\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":3,\\\"Usage\\\":0,\\\"Hidden\\\":true,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"\\\",\\\"DescriptionResourceString\\\":\\\"\\\"}]\",\"IncludedProperties\":\"[{\\\"Name\\\":\\\"X\\\",\\\"DisplayName\\\":\\\"CC_X\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CC_X\\\",\\\"DescriptionResourceString\\\":\\\"\\\"},{\\\"Name\\\":\\\"Y\\\",\\\"DisplayName\\\":\\\"CC_Y\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"CC_Y\\\",\\\"DescriptionResourceString\\\":\\\"\\\"},{\\\"Name\\\":\\\"Width\\\",\\\"DisplayName\\\":\\\"Width\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"400\\\",\\\"PhoneDefaultValue\\\":\\\"400\\\",\\\"WebDefaultValue\\\":\\\"400\\\",\\\"NullDefaultValue\\\":\\\"0\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Width\\\",\\\"DescriptionResourceString\\\":\\\"\\\"},{\\\"Name\\\":\\\"Height\\\",\\\"DisplayName\\\":\\\"Height\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":2,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"400\\\",\\\"PhoneDefaultValue\\\":\\\"400\\\",\\\"WebDefaultValue\\\":\\\"400\\\",\\\"NullDefaultValue\\\":\\\"0\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Height\\\",\\\"DescriptionResourceString\\\":\\\"\\\"},{\\\"Name\\\":\\\"Visible\\\",\\\"DisplayName\\\":\\\"Visible\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":4,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"true\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Visible\\\",\\\"DescriptionResourceString\\\":\\\"\\\"},{\\\"Name\\\":\\\"DisplayMode\\\",\\\"DisplayName\\\":\\\"DisplayMode\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":27,\\\"Usage\\\":2,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"DisplayMode\\\",\\\"DescriptionResourceString\\\":\\\"\\\"},{\\\"Name\\\":\\\"Tooltip\\\",\\\"DisplayName\\\":\\\"Tooltip\\\",\\\"Description\\\":\\\"\\\",\\\"Type\\\":3,\\\"Usage\\\":0,\\\"Hidden\\\":false,\\\"DefaultValue\\\":\\\"\\\",\\\"PhoneDefaultValue\\\":\\\"\\\",\\\"WebDefaultValue\\\":\\\"\\\",\\\"NullDefaultValue\\\":\\\"\\\",\\\"HelperUI\\\":\\\"\\\",\\\"Category\\\":\\\"design\\\",\\\"IsPrimaryBehavioral\\\":false,\\\"IsPrimaryInput\\\":false,\\\"IsPrimaryOutput\\\":false,\\\"IsResettable\\\":false,\\\"EnumValues\\\":null,\\\"Required\\\":false,\\\"IsDataSourceProperty\\\":false,\\\"PassThroughProperty\\\":\\\"\\\",\\\"ShouldAutoBind\\\":false,\\\"ParentDataSetName\\\":\\\"\\\",\\\"DisplayNameResourceString\\\":\\\"Tooltip\\\",\\\"DescriptionResourceString\\\":\\\"\\\"}]\",\"Events\":\"[{\\\"Name\\\":\\\"OnItemsChange\\\",\\\"DisplayName\\\":\\\"Geocoded locations\\\",\\\"Description\\\":\\\"Geocoded locations\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnLoad\\\",\\\"DisplayName\\\":\\\"OnLoad\\\",\\\"Description\\\":\\\"How the app responds when the map finishes loading.\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnMapClick\\\",\\\"DisplayName\\\":\\\"OnMapClick\\\",\\\"Description\\\":\\\"How the app responds when any location is clicked.\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnShapeCreated\\\",\\\"DisplayName\\\":\\\"OnShapeCreated\\\",\\\"Description\\\":\\\"How the app responds when a shape on the map is created.\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnShapeSelected\\\",\\\"DisplayName\\\":\\\"OnShapeSelected\\\",\\\"Description\\\":\\\"How the app responds when a shape on the map is selected.\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnShapeEdited\\\",\\\"DisplayName\\\":\\\"OnShapeEdited\\\",\\\"Description\\\":\\\"How the app responds when a shape on the map is edited.\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnShapeDeleted\\\",\\\"DisplayName\\\":\\\"OnShapeDeleted\\\",\\\"Description\\\":\\\"How the app responds when a shape on the map is deleted.\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnRouteDirectionChange\\\",\\\"DisplayName\\\":\\\"OnRouteDirectionChange\\\",\\\"Description\\\":\\\"How the app responds when route direction is changed.\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false}]\",\"CommonEvents\":\"[{\\\"Name\\\":\\\"OnChange\\\",\\\"DisplayName\\\":\\\"OnChange\\\",\\\"Description\\\":\\\"\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false},{\\\"Name\\\":\\\"OnSelect\\\",\\\"DisplayName\\\":\\\"OnSelect\\\",\\\"Description\\\":\\\"\\\",\\\"Hidden\\\":false,\\\"IsPrimaryInput\\\":false}]\",\"PropertyDependencies\":\"[{\\\"Input\\\":\\\"DefaultLocation\\\",\\\"Output\\\":\\\"CenterLocation\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"PinColor\\\",\\\"Output\\\":\\\"GeocodedItems\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"DefaultLocation\\\",\\\"Output\\\":\\\"ClickedLocation\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"DefaultLocation\\\",\\\"Output\\\":\\\"Bounds\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"Transparency\\\",\\\"Output\\\":\\\"SelectedShape\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"Transparency\\\",\\\"Output\\\":\\\"DeletedShape\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"UseRouting\\\",\\\"Output\\\":\\\"RouteDirection\\\",\\\"RequiredFor\\\":\\\"schema\\\"},{\\\"Input\\\":\\\"Items\\\",\\\"Output\\\":\\\"Selected\\\",\\\"RequiredFor\\\":\\\"\\\"},{\\\"Input\\\":\\\"Items\\\",\\\"Output\\\":\\\"SelectedItems\\\",\\\"RequiredFor\\\":\\\"\\\"},{\\\"Input\\\":\\\"Shapes_Items\\\",\\\"Output\\\":\\\"Shapes_Selected\\\",\\\"RequiredFor\\\":\\\"\\\"},{\\\"Input\\\":\\\"Shapes_Items\\\",\\\"Output\\\":\\\"Shapes_SelectedItems\\\",\\\"RequiredFor\\\":\\\"\\\"},{\\\"Input\\\":\\\"RouteWaypoints_Items\\\",\\\"Output\\\":\\\"RouteWaypoints_Selected\\\",\\\"RequiredFor\\\":\\\"\\\"},{\\\"Input\\\":\\\"RouteWaypoints_Items\\\",\\\"Output\\\":\\\"RouteWaypoints_SelectedItems\\\",\\\"RequiredFor\\\":\\\"\\\"}]\",\"SubscribedFunctionalities\":\"{\\\"sharedTemplate\\\":\\\"false\\\"}\",\"AuthConfigProperties\":\"[{\\\"Items\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Transparency\\\":{\\\"SectionIndex\\\":1,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Visible\\\":{\\\"SectionIndex\\\":2,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"X\\\":{\\\"SectionIndex\\\":2,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Position\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Y\\\":{\\\"SectionIndex\\\":2,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Position\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Width\\\":{\\\"SectionIndex\\\":2,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Size\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Height\\\":{\\\"SectionIndex\\\":2,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Size\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"DefaultLocation\\\":{\\\"SectionIndex\\\":3,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"DefaultLatitude\\\":{\\\"SectionIndex\\\":3,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"DefaultLongitude\\\":{\\\"SectionIndex\\\":3,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"DefaultZoomLevel\\\":{\\\"SectionIndex\\\":3,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"CurrentLocation\\\":{\\\"SectionIndex\\\":4,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"CurrentLocationLatitude\\\":{\\\"SectionIndex\\\":4,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"CurrentLocationLongitude\\\":{\\\"SectionIndex\\\":4,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"MapStyle\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"SatelliteView\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Clustering\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Zoom\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Compass\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Pitch\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"InfoCards\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"PinColor\\\":{\\\"SectionIndex\\\":5,\\\"HelperUI\\\":\\\"color\\\",\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":29,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"ShowShapes\\\":{\\\"SectionIndex\\\":6,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"ShowShapeLabels\\\":{\\\"SectionIndex\\\":6,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"ShapeDrawing\\\":{\\\"SectionIndex\\\":6,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"ShapeEditingDeleting\\\":{\\\"SectionIndex\\\":6,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderRadius\\\":{\\\"SectionIndex\\\":7,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderStyle\\\":{\\\"SectionIndex\\\":7,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Border\\\",\\\"SectionName\\\":null,\\\"Type\\\":30,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderThickness\\\":{\\\"SectionIndex\\\":7,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"Border\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderColor\\\":{\\\"SectionIndex\\\":7,\\\"HelperUI\\\":\\\"color\\\",\\\"PropertyGroupName\\\":\\\"Border\\\",\\\"SectionName\\\":null,\\\"Type\\\":29,\\\"PropertyKind\\\":2,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"TabIndex\\\":{\\\"SectionIndex\\\":8,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"RouteWaypoints_Items\\\":{\\\"SectionIndex\\\":9,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"UseRouting\\\":{\\\"SectionIndex\\\":9,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"RouteMaintainOrder\\\":{\\\"SectionIndex\\\":9,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"RouteOptimization\\\":{\\\"SectionIndex\\\":9,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"RouteTravelMode\\\":{\\\"SectionIndex\\\":9,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"ShowRoutePins\\\":{\\\"SectionIndex\\\":9,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":null,\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false}},{\\\"Visible\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"X\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Y\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Width\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"Height\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderRadius\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderStyle\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderThickness\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false},\\\"BorderColor\\\":{\\\"SectionIndex\\\":0,\\\"HelperUI\\\":null,\\\"PropertyGroupName\\\":\\\"\\\",\\\"SectionName\\\":\\\"Design\\\",\\\"Type\\\":0,\\\"PropertyKind\\\":1,\\\"WizardStep\\\":null,\\\"EnabledForFlyout\\\":false,\\\"Hidden\\\":false}}]\",\"DataConnectors\":\"[{\\\"Id\\\":\\\"/providers/microsoft.powerapps/apis/shared_microsoftspatialservices\\\",\\\"Name\\\":\\\"SpatialServices\\\",\\\"Required\\\":true}]\"}",
+      "FirstParty": true,
+      "Id": "http://microsoft.com/appmagic/powercontrol/Map",
+      "IsComponentDefinition": false,
+      "IsCustomGroupControlTemplate": false,
+      "IsPremiumPcfControl": false,
+      "LastModifiedTimestamp": "0",
+      "Name": "Map",
+      "OverridableProperties": {
+        "Bounds": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Record",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "East",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "North",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "South",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "West",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.334"
+        },
+        "CenterLocation": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Record",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Latitude",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Longitude",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.334"
+        },
+        "ClickedLocation": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Record",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Latitude",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Longitude",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.334"
+        },
+        "DeletedShape": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Record",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Area",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Color",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "GeoJSON",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Id",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Label",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Perimeter",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.334"
+        },
+        "GeocodedItems": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Table",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Address",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Label",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Latitude",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Longitude",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.334"
+        },
+        "RouteDirection": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Record",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "LengthInMeters",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Table",
+                "Name": "OrderedWaypoints",
+                "Type": [
+                  {
+                    "EnumString": "",
+                    "Kind": "String",
+                    "Name": "Address",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Index",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "String",
+                    "Name": "Label",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Latitude",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Longitude",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "RouteGeoJSON",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Table",
+                "Name": "RouteLegs",
+                "Type": [
+                  {
+                    "EnumString": "",
+                    "Kind": "String",
+                    "Name": "EndAddress",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "String",
+                    "Name": "EndLabel",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "EndLatitude",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "EndLongitude",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "Index",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "LengthInMeters",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "String",
+                    "Name": "StartAddress",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "String",
+                    "Name": "StartLabel",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "StartLatitude",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "StartLongitude",
+                    "Type": []
+                  },
+                  {
+                    "EnumString": "",
+                    "Kind": "Number",
+                    "Name": "TravelTimeInSeconds",
+                    "Type": []
+                  }
+                ]
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "TravelTimeInSeconds",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.334"
+        },
+        "SelectedShape": {
+          "Type": {
+            "EnumString": "",
+            "Kind": "Record",
+            "Name": "Root",
+            "Type": [
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Area",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Color",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "GeoJSON",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Id",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "String",
+                "Name": "Label",
+                "Type": []
+              },
+              {
+                "EnumString": "",
+                "Kind": "Number",
+                "Name": "Perimeter",
+                "Type": []
+              }
+            ]
+          },
+          "Version": "1.334"
+        }
+      },
+      "PCFDynamicSchemaForIRRetrieval": {
+        "Bounds": {
+          "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"North\":{\"type\":\"number\"},\"South\":{\"type\":\"number\"},\"East\":{\"type\":\"number\"},\"West\":{\"type\":\"number\"}}}",
+          "PCFSkipValidation": false
+        },
+        "CenterLocation": {
+          "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"}}}",
+          "PCFSkipValidation": false
+        },
+        "ClickedLocation": {
+          "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"}}}",
+          "PCFSkipValidation": false
+        },
+        "DeletedShape": {
+          "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"GeoJSON\":{\"type\":\"string\"},\"Label\":{\"type\":\"string\"},\"Color\":{\"type\":\"string\"},\"Area\":{\"type\":\"number\"},\"Perimeter\":{\"type\":\"number\"},\"Id\":{\"type\":\"string\"}}}",
+          "PCFSkipValidation": false
+        },
+        "GeocodedItems": {
+          "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Label\":{\"type\":\"string\"},\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"},\"Address\":{\"type\":\"string\"}}}}",
+          "PCFSkipValidation": false
+        },
+        "RouteDirection": {
+          "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"LengthInMeters\":{\"type\":\"number\"},\"TravelTimeInSeconds\":{\"type\":\"number\"},\"RouteGeoJSON\":{\"type\":\"string\"},\"RouteLegs\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"LengthInMeters\":{\"type\":\"number\"},\"TravelTimeInSeconds\":{\"type\":\"number\"},\"StartLatitude\":{\"type\":\"number\"},\"StartLongitude\":{\"type\":\"number\"},\"StartLabel\":{\"type\":\"string\"},\"StartAddress\":{\"type\":\"string\"},\"EndLatitude\":{\"type\":\"number\"},\"EndLongitude\":{\"type\":\"number\"},\"EndLabel\":{\"type\":\"string\"},\"EndAddress\":{\"type\":\"string\"},\"Index\":{\"type\":\"number\"}}}},\"OrderedWaypoints\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Latitude\":{\"type\":\"number\"},\"Longitude\":{\"type\":\"number\"},\"Label\":{\"type\":\"string\"},\"Address\":{\"type\":\"string\"},\"Index\":{\"type\":\"number\"}}}}}}",
+          "PCFSkipValidation": false
+        },
+        "SelectedShape": {
+          "DynamicSchema": "{\"type\":\"object\",\"properties\":{\"GeoJSON\":{\"type\":\"string\"},\"Label\":{\"type\":\"string\"},\"Color\":{\"type\":\"string\"},\"Area\":{\"type\":\"number\"},\"Perimeter\":{\"type\":\"number\"},\"Id\":{\"type\":\"string\"}}}",
+          "PCFSkipValidation": false
+        }
+      },
+      "TemplateDisplayName": "Map (preview)",
+      "Version": "1.8.26"
+    }
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Gallery1": 10,
+    "galleryTemplate1": 11,
+    "Host": 0,
+    "Image1": 13,
+    "Label1": 9,
+    "Label10": 5,
+    "Label2": 6,
+    "Label3": 7,
+    "Label4": 8,
+    "Label555": 4,
+    "Map1": 0,
+    "NextArrow1": 14,
+    "Rectangle1": 12,
+    "Screen1": 3,
+    "Separator1": 17,
+    "Subtitle1": 16,
+    "Title1": 15
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1043642,
+    "ControlCount": {
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "icon": 1,
+      "image": 1,
+      "label": 8,
+      "rectangle": 2,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.1277623
+  },
+  "WasLocalDatabaseReferencesEmpty": false
 }

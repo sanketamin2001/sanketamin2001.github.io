@@ -122,3 +122,14 @@ Screen1 As screen:
             Width: =4
             ZIndex: =6
 
+    "Map1 As 'Map (preview)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        CurrentLocation: =true
+        DisplayMode: =DisplayMode.Edit
+        Height: =400
+        PinColor: =RGBA(29, 114, 169, 1)
+        Width: =400
+        X: =966
+        Y: =368
+        ZIndex: =7
+
