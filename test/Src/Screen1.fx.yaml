@@ -27,7 +27,7 @@ Screen1 As screen:
         ZIndex: =4
 
     Label555 As label:
-        Text: ="shah"
+        Text: ="mansuri"
         X: =750
         Y: =50
         ZIndex: =5
