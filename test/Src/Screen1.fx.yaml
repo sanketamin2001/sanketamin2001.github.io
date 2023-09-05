@@ -26,16 +26,16 @@ Screen1 As screen:
         Y: =52
         ZIndex: =4
 
+    Label10 As label:
+        Text: ="github123"
+        X: =550
+        Y: =50
+        ZIndex: =5
+
     Label5 As label:
         Text: ="Text"
         X: =835
         Y: =360
-        ZIndex: =5
-
-    Label10 As label:
-        Text: ="github"
-        X: =550
-        Y: =50
         ZIndex: =5
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
