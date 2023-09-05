@@ -32,6 +32,12 @@ Screen1 As screen:
         Y: =360
         ZIndex: =5
 
+    Label10 As label:
+        Text: ="github"
+        X: =550
+        Y: =50
+        ZIndex: =5
+
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Items: =Accounts
