@@ -38,6 +38,12 @@ Screen1 As screen:
         Y: =50
         ZIndex: =5
 
+         Label11 As label:
+        Text: ="umesh"
+        X: =550
+        Y: =50
+        ZIndex: =5
+
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Items: =Accounts
